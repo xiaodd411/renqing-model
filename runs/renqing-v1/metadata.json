@@ -1,0 +1,120 @@
+{
+  "base_model": "hfl/rbt3",
+  "base_revision": "0aa0527ff4170f29e1dfd3eb6ef60dc67e1bf75c",
+  "seed": 42,
+  "max_length": 256,
+  "split_stats": {
+    "train": {
+      "examples": 168,
+      "groups": 56,
+      "types": {
+        "choice": 56,
+        "score": 56,
+        "noul": 56
+      }
+    },
+    "validation": {
+      "examples": 24,
+      "groups": 8,
+      "types": {
+        "choice": 8,
+        "score": 8,
+        "noul": 8
+      }
+    },
+    "calibration": {
+      "examples": 24,
+      "groups": 8,
+      "types": {
+        "choice": 8,
+        "score": 8,
+        "noul": 8
+      }
+    },
+    "test": {
+      "examples": 24,
+      "groups": 8,
+      "types": {
+        "choice": 8,
+        "score": 8,
+        "noul": 8
+      }
+    }
+  },
+  "dataset_manifest": {
+    "seed": 42,
+    "source": "original_synthetic_authored_by_assistant",
+    "human_reviewed": false,
+    "label_probabilities": "author_assigned_not_observed_frequencies",
+    "splits": {
+      "train": {
+        "examples": 168,
+        "groups": 56,
+        "types": {
+          "choice": 56,
+          "score": 56,
+          "noul": 56
+        }
+      },
+      "validation": {
+        "examples": 24,
+        "groups": 8,
+        "types": {
+          "choice": 8,
+          "score": 8,
+          "noul": 8
+        }
+      },
+      "calibration": {
+        "examples": 24,
+        "groups": 8,
+        "types": {
+          "choice": 8,
+          "score": 8,
+          "noul": 8
+        }
+      },
+      "test": {
+        "examples": 24,
+        "groups": 8,
+        "types": {
+          "choice": 8,
+          "score": 8,
+          "noul": 8
+        }
+      }
+    },
+    "seed_sha256": "2d60e6b86fc2cbb7e97ddcf173c8446bb46a80f700a7d4d74b757dbe1b3bdeec"
+  },
+  "parameters": 38477569,
+  "data_sha256": {
+    "train": "7f94aded105b4004ed14585ec3ef5729c4f78b63d05625c210f3d250eee2c93f",
+    "validation": "32c9e36c9b6be5d758e72da5fe3de415d197fd99727976544f0e9a3660956485",
+    "calibration": "e8c8f3c5e4c66bbe4f9d1ecd02917a96724e011e25abe7878fb5774863fd3199",
+    "test": "fc0935c53a355f0e58cb831fd74e7f6521ff6660cc7bd1e28a35da21bdf8a791"
+  },
+  "environment": {
+    "python": "3.12.13",
+    "torch": "2.8.0+cu128",
+    "transformers": "4.57.3",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 5070"
+  },
+  "hyperparameters": {
+    "command": "train",
+    "data": "outputs\\renqing-model\\data\\demo",
+    "output": "outputs\\renqing-model\\runs\\renqing-v1",
+    "base_model": "work\\base-rbt3",
+    "revision": "0aa0527ff4170f29e1dfd3eb6ef60dc67e1bf75c",
+    "epochs": 20,
+    "patience": 5,
+    "batch_size": 12,
+    "lr": 3e-05,
+    "max_length": 256,
+    "seed": 42,
+    "threads": 4,
+    "device": "cuda",
+    "threshold": 0.8
+  },
+  "best_epoch": 5
+}

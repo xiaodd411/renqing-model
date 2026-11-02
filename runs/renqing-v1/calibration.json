@@ -1,0 +1,101 @@
+{
+  "method": "scalar_temperature_nll_grid",
+  "temperature": 1.1547819846894583,
+  "fit_split": "calibration",
+  "fit_examples": 24,
+  "before": {
+    "count": 24,
+    "accuracy_against_target_mode": 0.6666666666666666,
+    "nll": 0.7300589759914944,
+    "brier": 0.2918831353086753,
+    "ece_soft": 0.15421444684978067,
+    "coverage": 0.2916666666666667,
+    "accepted_accuracy_against_target_mode": 1.0,
+    "reliability_bins": [
+      {
+        "lower": 0.4,
+        "count": 8,
+        "confidence": 0.41292112089652333,
+        "target_support": 0.5774999999999999
+      },
+      {
+        "lower": 0.5,
+        "count": 4,
+        "confidence": 0.5638087105543949,
+        "target_support": 0.25
+      },
+      {
+        "lower": 0.6,
+        "count": 4,
+        "confidence": 0.6212504042254285,
+        "target_support": 0.5
+      },
+      {
+        "lower": 0.7,
+        "count": 1,
+        "confidence": 0.7106379398615827,
+        "target_support": 0.9
+      },
+      {
+        "lower": 0.8,
+        "count": 2,
+        "confidence": 0.8173314264486513,
+        "target_support": 0.9
+      },
+      {
+        "lower": 0.9,
+        "count": 5,
+        "confidence": 0.957916005041303,
+        "target_support": 0.9
+      }
+    ]
+  },
+  "after": {
+    "count": 24,
+    "accuracy_against_target_mode": 0.6666666666666666,
+    "nll": 0.7276992321270734,
+    "brier": 0.29135587814258207,
+    "ece_soft": 0.1354876741343168,
+    "coverage": 0.20833333333333334,
+    "accepted_accuracy_against_target_mode": 1.0,
+    "reliability_bins": [
+      {
+        "lower": 0.3,
+        "count": 2,
+        "confidence": 0.39658596371136945,
+        "target_support": 0.86
+      },
+      {
+        "lower": 0.4,
+        "count": 6,
+        "confidence": 0.4055920414995355,
+        "target_support": 0.48333333333333334
+      },
+      {
+        "lower": 0.5,
+        "count": 6,
+        "confidence": 0.5696986524997628,
+        "target_support": 0.3316666666666667
+      },
+      {
+        "lower": 0.6,
+        "count": 3,
+        "confidence": 0.6317070537049405,
+        "target_support": 0.6366666666666667
+      },
+      {
+        "lower": 0.7,
+        "count": 2,
+        "confidence": 0.7740655544748003,
+        "target_support": 0.9
+      },
+      {
+        "lower": 0.9,
+        "count": 5,
+        "confidence": 0.9326977421418802,
+        "target_support": 0.9
+      }
+    ]
+  },
+  "scope": "synthetic_demo_only"
+}

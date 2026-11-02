@@ -1,0 +1,50 @@
+{
+  "model": "renqing-0.1",
+  "answers": {
+    "response": {
+      "type": "choice",
+      "probabilities": [
+        0.12794695258511113,
+        0.5530944954776933,
+        0.31895855193719574
+      ],
+      "confidence": 0.5530944954776933,
+      "confidence_definition": "max_class_probability",
+      "calibration_status": "synthetic_demo_only",
+      "needs_review": true,
+      "choice": "这周末我已经有安排，不能接这份报告。周一可以一起确认需要我配合的部分。",
+      "index": 1
+    },
+    "pressure": {
+      "type": "noul",
+      "probabilities": [
+        0.4159711903412008,
+        0.5840288096587992
+      ],
+      "confidence": 0.5840288096587992,
+      "confidence_definition": "max_class_probability",
+      "calibration_status": "synthetic_demo_only",
+      "needs_review": true,
+      "noul": 0.4159711903412008
+    },
+    "risk": {
+      "type": "score",
+      "probabilities": [
+        0.40285656888428767,
+        0.39146435046076944,
+        0.20567908065494286
+      ],
+      "confidence": 0.40285656888428767,
+      "confidence_definition": "max_class_probability",
+      "calibration_status": "synthetic_demo_only",
+      "needs_review": true,
+      "score": 0.40141125588532756,
+      "level": "低：没有明显冲突或关系损害迹象",
+      "values": [
+        0.0,
+        0.5,
+        1.0
+      ]
+    }
+  }
+}

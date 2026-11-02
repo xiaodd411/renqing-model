@@ -1,0 +1,45 @@
+{
+  "seed": 42,
+  "source": "original_synthetic_authored_by_assistant",
+  "human_reviewed": false,
+  "label_probabilities": "author_assigned_not_observed_frequencies",
+  "splits": {
+    "train": {
+      "examples": 168,
+      "groups": 56,
+      "types": {
+        "choice": 56,
+        "score": 56,
+        "noul": 56
+      }
+    },
+    "validation": {
+      "examples": 24,
+      "groups": 8,
+      "types": {
+        "choice": 8,
+        "score": 8,
+        "noul": 8
+      }
+    },
+    "calibration": {
+      "examples": 24,
+      "groups": 8,
+      "types": {
+        "choice": 8,
+        "score": 8,
+        "noul": 8
+      }
+    },
+    "test": {
+      "examples": 24,
+      "groups": 8,
+      "types": {
+        "choice": 8,
+        "score": 8,
+        "noul": 8
+      }
+    }
+  },
+  "seed_sha256": "2d60e6b86fc2cbb7e97ddcf173c8446bb46a80f700a7d4d74b757dbe1b3bdeec"
+}

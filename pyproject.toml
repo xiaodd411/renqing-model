@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "renqing-model"
+version = "0.1.0"
+description = "中文人际场景的可训练类型化决策模型"
+requires-python = ">=3.11"
+dependencies = ["torch==2.8.0", "transformers==4.57.3", "numpy>=1.26,<3", "safetensors>=0.5"]
+
+[project.scripts]
+renqing = "renqing.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,1002 @@
+{
+  "test_scope": "heldout scenario groups; author-assigned synthetic labels; not a real-world benchmark",
+  "best_epoch": 5,
+  "training_seconds": 5.324278999993112,
+  "threshold": 0.8,
+  "temperature": 1.1547819846894583,
+  "uniform_baseline": {
+    "count": 24,
+    "accuracy_against_target_mode": 0.4583333333333333,
+    "nll": 0.9634572526320548,
+    "brier": 0.4466527777777778,
+    "ece_soft": 0.16180555555555548,
+    "coverage": 0.0,
+    "accepted_accuracy_against_target_mode": null,
+    "reliability_bins": [
+      {
+        "lower": 0.3,
+        "count": 16,
+        "confidence": 0.3333333333333333,
+        "target_support": 0.26687500000000003
+      },
+      {
+        "lower": 0.5,
+        "count": 8,
+        "confidence": 0.5,
+        "target_support": 0.8524999999999999
+      }
+    ]
+  },
+  "pretrained_untrained_head": {
+    "overall": {
+      "count": 24,
+      "accuracy_against_target_mode": 0.4166666666666667,
+      "nll": 0.9606053154638099,
+      "brier": 0.4447760148519297,
+      "ece_soft": 0.022328586435044057,
+      "coverage": 0.0,
+      "accepted_accuracy_against_target_mode": null,
+      "reliability_bins": [
+        {
+          "lower": 0.3,
+          "count": 16,
+          "confidence": 0.3393277555344969,
+          "target_support": 0.37187499999999996
+        },
+        {
+          "lower": 0.5,
+          "count": 8,
+          "confidence": 0.500608729625874,
+          "target_support": 0.5025000000000001
+        }
+      ]
+    },
+    "by_type": {
+      "choice": {
+        "count": 8,
+        "accuracy_against_target_mode": 0.625,
+        "nll": 1.0851102619781412,
+        "brier": 0.47441245474547605,
+        "ece_soft": 0.2422231350077647,
+        "coverage": 0.0,
+        "accepted_accuracy_against_target_mode": null,
+        "reliability_bins": [
+          {
+            "lower": 0.3,
+            "count": 8,
+            "confidence": 0.34277686499223525,
+            "target_support": 0.585
+          }
+        ]
+      },
+      "noul": {
+        "count": 8,
+        "accuracy_against_target_mode": 0.5,
+        "nll": 0.6935404739279363,
+        "brier": 0.4517932926576105,
+        "ece_soft": 0.001891270374126064,
+        "coverage": 0.0,
+        "accepted_accuracy_against_target_mode": null,
+        "reliability_bins": [
+          {
+            "lower": 0.5,
+            "count": 8,
+            "confidence": 0.500608729625874,
+            "target_support": 0.5025000000000001
+          }
+        ]
+      },
+      "score": {
+        "count": 8,
+        "accuracy_against_target_mode": 0.125,
+        "nll": 1.103165210485352,
+        "brier": 0.40812229715270226,
+        "ece_soft": 0.17712864607675854,
+        "coverage": 0.0,
+        "accepted_accuracy_against_target_mode": null,
+        "reliability_bins": [
+          {
+            "lower": 0.3,
+            "count": 8,
+            "confidence": 0.33587864607675855,
+            "target_support": 0.15875
+          }
+        ]
+      }
+    },
+    "by_domain": {
+      "伴侣": {
+        "count": 3,
+        "accuracy_against_target_mode": 0.3333333333333333,
+        "nll": 0.9670005999530118,
+        "brier": 0.47458730824307477,
+        "ece_soft": 0.3593327891666592,
+        "coverage": 0.0,
+        "accepted_accuracy_against_target_mode": null,
+        "reliability_bins": [
+          {
+            "lower": 0.3,
+            "count": 2,
+            "confidence": 0.33924892107493004,
+            "target_support": 0.045
+          },
+          {
+            "lower": 0.5,
+            "count": 1,
+            "confidence": 0.5004994746498823,
+            "target_support": 0.99
+          }
+        ]
+      },
+      "协作": {
+        "count": 3,
+        "accuracy_against_target_mode": 0.6666666666666666,
+        "nll": 0.9622821406191887,
+        "brier": 0.44218958740796416,
+        "ece_soft": 0.2620092645382026,
+        "coverage": 0.0,
+        "accepted_accuracy_against_target_mode": null,
+        "reliability_bins": [
+          {
+            "lower": 0.3,
+            "count": 2,
+            "confidence": 0.33668360790543905,
+            "target_support": 0.49
+          },
+          {
+            "lower": 0.5,
+            "count": 1,
+            "confidence": 0.5006049905745139,
+            "target_support": 0.98
+          }
+        ]
+      },
+      "家庭": {
+        "count": 3,
+        "accuracy_against_target_mode": 0.6666666666666666,
+        "nll": 0.9511376032716722,
+        "brier": 0.4365532199059539,
+        "ece_soft": 0.5128493477059544,
+        "coverage": 0.0,
+        "accepted_accuracy_against_target_mode": null,
+        "reliability_bins": [
+          {
+            "lower": 0.3,
+            "count": 2,
+            "confidence": 0.3409872972157849,
+            "target_support": 0.875
+          },
+          {
+            "lower": 0.5,
+            "count": 1,
+            "confidence": 0.5005226375494328,
+            "target_support": 0.03
+          }
+        ]
+      },
+      "朋友": {
+        "count": 3,
+        "accuracy_against_target_mode": 0.3333333333333333,
+        "nll": 0.9522594227303512,
+        "brier": 0.45849940266422023,
+        "ece_soft": 0.23579762478765642,
+        "coverage": 0.0,
+        "accepted_accuracy_against_target_mode": null,
+        "reliability_bins": [
+          {
+            "lower": 0.3,
+            "count": 2,
+            "confidence": 0.34169111749632564,
+            "target_support": 0.455
+          },
+          {
+            "lower": 0.5,
+            "count": 1,
+            "confidence": 0.5007751093556205,
+            "target_support": 0.02
+          }
+        ]
+      },
+      "服务": {
+        "count": 3,
+        "accuracy_against_target_mode": 0.6666666666666666,
+        "nll": 0.9600721251125285,
+        "brier": 0.43443008704522224,
+        "ece_soft": 0.2578354923085037,
+        "coverage": 0.0,
+        "accepted_accuracy_against_target_mode": null,
+        "reliability_bins": [
+          {
+            "lower": 0.3,
+            "count": 2,
+            "confidence": 0.33807720776927447,
+            "target_support": 0.49
+          },
+          {
+            "lower": 0.5,
+            "count": 1,
+            "confidence": 0.5003391075359398,
+            "target_support": 0.97
+          }
+        ]
+      },
+      "线上": {
+        "count": 3,
+        "accuracy_against_target_mode": 0.0,
+        "nll": 0.969707620224381,
+        "brier": 0.4475271386950646,
+        "ece_soft": 0.35238120784871724,
+        "coverage": 0.0,
+        "accepted_accuracy_against_target_mode": null,
+        "reliability_bins": [
+          {
+            "lower": 0.3,
+            "count": 2,
+            "confidence": 0.338015032202607,
+            "target_support": 0.05
+          },
+          {
+            "lower": 0.5,
+            "count": 1,
+            "confidence": 0.5011135591409378,
+            "target_support": 0.02
+          }
+        ]
+      },
+      "职场": {
+        "count": 3,
+        "accuracy_against_target_mode": 0.3333333333333333,
+        "nll": 0.9551622050503111,
+        "brier": 0.42514613954481706,
+        "ece_soft": 0.25274853647204487,
+        "coverage": 0.0,
+        "accepted_accuracy_against_target_mode": null,
+        "reliability_bins": [
+          {
+            "lower": 0.3,
+            "count": 2,
+            "confidence": 0.3413095213193705,
+            "target_support": 0.49
+          },
+          {
+            "lower": 0.5,
+            "count": 1,
+            "confidence": 0.5008646520548756,
+            "target_support": 0.04
+          }
+        ]
+      },
+      "邻里": {
+        "count": 3,
+        "accuracy_against_target_mode": 0.3333333333333333,
+        "nll": 0.9672208067490343,
+        "brier": 0.43927523530912,
+        "ece_soft": 0.3290227908128991,
+        "coverage": 0.0,
+        "accepted_accuracy_against_target_mode": null,
+        "reliability_bins": [
+          {
+            "lower": 0.3,
+            "count": 2,
+            "confidence": 0.3386093392922435,
+            "target_support": 0.08
+          },
+          {
+            "lower": 0.5,
+            "count": 1,
+            "confidence": 0.5001503061457896,
+            "target_support": 0.97
+          }
+        ]
+      }
+    }
+  },
+  "trained_uncalibrated": {
+    "overall": {
+      "count": 24,
+      "accuracy_against_target_mode": 0.5416666666666666,
+      "nll": 0.7653309910803398,
+      "brier": 0.32576483881329504,
+      "ece_soft": 0.18117125766783004,
+      "coverage": 0.25,
+      "accepted_accuracy_against_target_mode": 1.0,
+      "reliability_bins": [
+        {
+          "lower": 0.4,
+          "count": 8,
+          "confidence": 0.4191005850908429,
+          "target_support": 0.46124999999999994
+        },
+        {
+          "lower": 0.5,
+          "count": 4,
+          "confidence": 0.5512934800448241,
+          "target_support": 0.27
+        },
+        {
+          "lower": 0.6,
+          "count": 4,
+          "confidence": 0.6138511094603702,
+          "target_support": 0.025
+        },
+        {
+          "lower": 0.7,
+          "count": 2,
+          "confidence": 0.7321023657628365,
+          "target_support": 0.9
+        },
+        {
+          "lower": 0.8,
+          "count": 2,
+          "confidence": 0.8722248315080732,
+          "target_support": 0.9
+        },
+        {
+          "lower": 0.9,
+          "count": 4,
+          "confidence": 0.9347477253189267,
+          "target_support": 0.9
+        }
+      ]
+    },
+    "by_type": {
+      "choice": {
+        "count": 8,
+        "accuracy_against_target_mode": 1.0,
+        "nll": 0.42095105781173026,
+        "brier": 0.013738072624883954,
+        "ece_soft": 0.06629206334173593,
+        "coverage": 0.75,
+        "accepted_accuracy_against_target_mode": 1.0,
+        "reliability_bins": [
+          {
+            "lower": 0.7,
+            "count": 2,
+            "confidence": 0.7321023657628365,
+            "target_support": 0.9
+          },
+          {
+            "lower": 0.8,
+            "count": 2,
+            "confidence": 0.8722248315080732,
+            "target_support": 0.9
+          },
+          {
+            "lower": 0.9,
+            "count": 4,
+            "confidence": 0.9347477253189267,
+            "target_support": 0.9
+          }
+        ]
+      },
+      "noul": {
+        "count": 8,
+        "accuracy_against_target_mode": 0.125,
+        "nll": 0.8395758904721873,
+        "brier": 0.5954411086158685,
+        "ece_soft": 0.4350722947525972,
+        "coverage": 0.0,
+        "accepted_accuracy_against_target_mode": null,
+        "reliability_bins": [
+          {
+            "lower": 0.5,
+            "count": 4,
+            "confidence": 0.5512934800448241,
+            "target_support": 0.27
+          },
+          {
+            "lower": 0.6,
+            "count": 4,
+            "confidence": 0.6138511094603702,
+            "target_support": 0.025
+          }
+        ]
+      },
+      "score": {
+        "count": 8,
+        "accuracy_against_target_mode": 0.5,
+        "nll": 1.0354660249571015,
+        "brier": 0.36811533519913275,
+        "ece_soft": 0.042149414909157024,
+        "coverage": 0.0,
+        "accepted_accuracy_against_target_mode": null,
+        "reliability_bins": [
+          {
+            "lower": 0.4,
+            "count": 8,
+            "confidence": 0.4191005850908429,
+            "target_support": 0.46124999999999994
+          }
+        ]
+      }
+    },
+    "by_domain": {
+      "伴侣": {
+        "count": 3,
+        "accuracy_against_target_mode": 1.0,
+        "nll": 0.6260023049611854,
+        "brier": 0.23684848887516954,
+        "ece_soft": 0.30253819006368593,
+        "coverage": 0.3333333333333333,
+        "accepted_accuracy_against_target_mode": 1.0,
+        "reliability_bins": [
+          {
+            "lower": 0.4,
+            "count": 1,
+            "confidence": 0.41222515558185974,
+            "target_support": 0.88
+          },
+          {
+            "lower": 0.5,
+            "count": 1,
+            "confidence": 0.5586344253843416,
+            "target_support": 0.99
+          },
+          {
+            "lower": 0.9,
+            "count": 1,
+            "confidence": 0.9084741511572593,
+            "target_support": 0.9
+          }
+        ]
+      },
+      "协作": {
+        "count": 3,
+        "accuracy_against_target_mode": 0.3333333333333333,
+        "nll": 0.7762991902191684,
+        "brier": 0.3503070771237524,
+        "ece_soft": 0.31894208506239846,
+        "coverage": 0.3333333333333333,
+        "accepted_accuracy_against_target_mode": 1.0,
+        "reliability_bins": [
+          {
+            "lower": 0.4,
+            "count": 1,
+            "confidence": 0.4172940264716113,
+            "target_support": 0.08
+          },
+          {
+            "lower": 0.6,
+            "count": 1,
+            "confidence": 0.6208389422958672,
+            "target_support": 0.02
+          },
+          {
+            "lower": 0.9,
+            "count": 1,
+            "confidence": 0.9186932864197169,
+            "target_support": 0.9
+          }
+        ]
+      },
+      "家庭": {
+        "count": 3,
+        "accuracy_against_target_mode": 0.3333333333333333,
+        "nll": 0.9188535337465282,
+        "brier": 0.40295509051107353,
+        "ece_soft": 0.3254438897007496,
+        "coverage": 0.3333333333333333,
+        "accepted_accuracy_against_target_mode": 1.0,
+        "reliability_bins": [
+          {
+            "lower": 0.4,
+            "count": 1,
+            "confidence": 0.4424786124860602,
+            "target_support": 0.01
+          },
+          {
+            "lower": 0.5,
+            "count": 1,
+            "confidence": 0.5405754805642562,
+            "target_support": 0.03
+          },
+          {
+            "lower": 0.9,
+            "count": 1,
+            "confidence": 0.9332775760519326,
+            "target_support": 0.9
+          }
+        ]
+      },
+      "朋友": {
+        "count": 3,
+        "accuracy_against_target_mode": 0.6666666666666666,
+        "nll": 0.7324131451991494,
+        "brier": 0.3077463643659181,
+        "ece_soft": 0.3614171803426094,
+        "coverage": 0.3333333333333333,
+        "accepted_accuracy_against_target_mode": 1.0,
+        "reliability_bins": [
+          {
+            "lower": 0.4,
+            "count": 1,
+            "confidence": 0.41605097983659334,
+            "target_support": 0.88
+          },
+          {
+            "lower": 0.5,
+            "count": 1,
+            "confidence": 0.5617566332176236,
+            "target_support": 0.02
+          },
+          {
+            "lower": 0.9,
+            "count": 1,
+            "confidence": 0.9785458876467981,
+            "target_support": 0.9
+          }
+        ]
+      },
+      "服务": {
+        "count": 3,
+        "accuracy_against_target_mode": 0.6666666666666666,
+        "nll": 0.7463145992887942,
+        "brier": 0.3174955754753745,
+        "ece_soft": 0.3399648428297118,
+        "coverage": 0.3333333333333333,
+        "accepted_accuracy_against_target_mode": 1.0,
+        "reliability_bins": [
+          {
+            "lower": 0.4,
+            "count": 1,
+            "confidence": 0.41964074604555174,
+            "target_support": 0.84
+          },
+          {
+            "lower": 0.6,
+            "count": 1,
+            "confidence": 0.6074953481333282,
+            "target_support": 0.03
+          },
+          {
+            "lower": 0.8,
+            "count": 1,
+            "confidence": 0.877960073598641,
+            "target_support": 0.9
+          }
+        ]
+      },
+      "线上": {
+        "count": 3,
+        "accuracy_against_target_mode": 0.6666666666666666,
+        "nll": 0.7892601837993802,
+        "brier": 0.34485030911748416,
+        "ece_soft": 0.3949378746123846,
+        "coverage": 0.0,
+        "accepted_accuracy_against_target_mode": null,
+        "reliability_bins": [
+          {
+            "lower": 0.4,
+            "count": 1,
+            "confidence": 0.40116261466789344,
+            "target_support": 0.84
+          },
+          {
+            "lower": 0.6,
+            "count": 1,
+            "confidence": 0.6053614492988788,
+            "target_support": 0.02
+          },
+          {
+            "lower": 0.7,
+            "count": 1,
+            "confidence": 0.7393852107938315,
+            "target_support": 0.9
+          }
+        ]
+      },
+      "职场": {
+        "count": 3,
+        "accuracy_against_target_mode": 0.3333333333333333,
+        "nll": 0.7320177156204563,
+        "brier": 0.29095399928897486,
+        "ece_soft": 0.299140613127356,
+        "coverage": 0.3333333333333333,
+        "accepted_accuracy_against_target_mode": 1.0,
+        "reliability_bins": [
+          {
+            "lower": 0.4,
+            "count": 1,
+            "confidence": 0.43970404778649863,
+            "target_support": 0.08
+          },
+          {
+            "lower": 0.5,
+            "count": 1,
+            "confidence": 0.544207381013075,
+            "target_support": 0.04
+          },
+          {
+            "lower": 0.8,
+            "count": 1,
+            "confidence": 0.8664895894175054,
+            "target_support": 0.9
+          }
+        ]
+      },
+      "邻里": {
+        "count": 3,
+        "accuracy_against_target_mode": 0.3333333333333333,
+        "nll": 0.8014872558080555,
+        "brier": 0.3549618057486133,
+        "ece_soft": 0.3637125584107466,
+        "coverage": 0.0,
+        "accepted_accuracy_against_target_mode": null,
+        "reliability_bins": [
+          {
+            "lower": 0.4,
+            "count": 1,
+            "confidence": 0.40424849785067496,
+            "target_support": 0.08
+          },
+          {
+            "lower": 0.6,
+            "count": 1,
+            "confidence": 0.6217086981134066,
+            "target_support": 0.03
+          },
+          {
+            "lower": 0.7,
+            "count": 1,
+            "confidence": 0.7248195207318415,
+            "target_support": 0.9
+          }
+        ]
+      }
+    }
+  },
+  "trained_calibrated": {
+    "overall": {
+      "count": 24,
+      "accuracy_against_target_mode": 0.5416666666666666,
+      "nll": 0.7620163161050629,
+      "brier": 0.32176107443272584,
+      "ece_soft": 0.1515795353884442,
+      "coverage": 0.25,
+      "accepted_accuracy_against_target_mode": 1.0,
+      "reliability_bins": [
+        {
+          "lower": 0.3,
+          "count": 2,
+          "confidence": 0.39466377357361876,
+          "target_support": 0.45999999999999996
+        },
+        {
+          "lower": 0.4,
+          "count": 6,
+          "confidence": 0.4135120877329031,
+          "target_support": 0.46166666666666667
+        },
+        {
+          "lower": 0.5,
+          "count": 6,
+          "confidence": 0.5604794917797523,
+          "target_support": 0.18833333333333335
+        },
+        {
+          "lower": 0.6,
+          "count": 4,
+          "confidence": 0.6462152861193572,
+          "target_support": 0.4625
+        },
+        {
+          "lower": 0.8,
+          "count": 5,
+          "confidence": 0.8621739123893096,
+          "target_support": 0.9
+        },
+        {
+          "lower": 0.9,
+          "count": 1,
+          "confidence": 0.9614403896579224,
+          "target_support": 0.9
+        }
+      ]
+    },
+    "by_type": {
+      "choice": {
+        "count": 8,
+        "accuracy_against_target_mode": 1.0,
+        "nll": 0.4298712192721201,
+        "brier": 0.021301955120595406,
+        "ece_soft": 0.08459952084410015,
+        "coverage": 0.75,
+        "accepted_accuracy_against_target_mode": 1.0,
+        "reliability_bins": [
+          {
+            "lower": 0.6,
+            "count": 2,
+            "confidence": 0.6868873304792866,
+            "target_support": 0.9
+          },
+          {
+            "lower": 0.8,
+            "count": 5,
+            "confidence": 0.8621739123893096,
+            "target_support": 0.9
+          },
+          {
+            "lower": 0.9,
+            "count": 1,
+            "confidence": 0.9614403896579224,
+            "target_support": 0.9
+          }
+        ]
+      },
+      "noul": {
+        "count": 8,
+        "accuracy_against_target_mode": 0.125,
+        "nll": 0.8181035343504156,
+        "brier": 0.5748296328878455,
+        "ece_soft": 0.4242454292746711,
+        "coverage": 0.0,
+        "accepted_accuracy_against_target_mode": null,
+        "reliability_bins": [
+          {
+            "lower": 0.5,
+            "count": 6,
+            "confidence": 0.5604794917797523,
+            "target_support": 0.18833333333333335
+          },
+          {
+            "lower": 0.6,
+            "count": 2,
+            "confidence": 0.6055432417594278,
+            "target_support": 0.025
+          }
+        ]
+      },
+      "score": {
+        "count": 8,
+        "accuracy_against_target_mode": 0.5,
+        "nll": 1.038074194692653,
+        "brier": 0.3691516352897367,
+        "ece_soft": 0.05244999080691798,
+        "coverage": 0.0,
+        "accepted_accuracy_against_target_mode": null,
+        "reliability_bins": [
+          {
+            "lower": 0.3,
+            "count": 2,
+            "confidence": 0.39466377357361876,
+            "target_support": 0.45999999999999996
+          },
+          {
+            "lower": 0.4,
+            "count": 6,
+            "confidence": 0.4135120877329031,
+            "target_support": 0.46166666666666667
+          }
+        ]
+      }
+    },
+    "by_domain": {
+      "伴侣": {
+        "count": 3,
+        "accuracy_against_target_mode": 1.0,
+        "nll": 0.6385627775220707,
+        "brier": 0.24503853931580463,
+        "ece_soft": 0.315480550156665,
+        "coverage": 0.3333333333333333,
+        "accepted_accuracy_against_target_mode": 1.0,
+        "reliability_bins": [
+          {
+            "lower": 0.4,
+            "count": 1,
+            "confidence": 0.4034314801914568,
+            "target_support": 0.88
+          },
+          {
+            "lower": 0.5,
+            "count": 1,
+            "confidence": 0.5508337753369641,
+            "target_support": 0.99
+          },
+          {
+            "lower": 0.8,
+            "count": 1,
+            "confidence": 0.8692930940015842,
+            "target_support": 0.9
+          }
+        ]
+      },
+      "协作": {
+        "count": 3,
+        "accuracy_against_target_mode": 0.3333333333333333,
+        "nll": 0.7659856702758999,
+        "brier": 0.3386978378056074,
+        "ece_soft": 0.30963933351855455,
+        "coverage": 0.3333333333333333,
+        "accepted_accuracy_against_target_mode": 1.0,
+        "reliability_bins": [
+          {
+            "lower": 0.4,
+            "count": 1,
+            "confidence": 0.40730489166442374,
+            "target_support": 0.08
+          },
+          {
+            "lower": 0.6,
+            "count": 1,
+            "confidence": 0.6051609424009503,
+            "target_support": 0.02
+          },
+          {
+            "lower": 0.8,
+            "count": 1,
+            "confidence": 0.8835478335097103,
+            "target_support": 0.9
+          }
+        ]
+      },
+      "家庭": {
+        "count": 3,
+        "accuracy_against_target_mode": 0.3333333333333333,
+        "nll": 0.888706676804782,
+        "brier": 0.3871401704484317,
+        "ece_soft": 0.3081950236553485,
+        "coverage": 0.3333333333333333,
+        "accepted_accuracy_against_target_mode": 1.0,
+        "reliability_bins": [
+          {
+            "lower": 0.4,
+            "count": 1,
+            "confidence": 0.4289273133641084,
+            "target_support": 0.01
+          },
+          {
+            "lower": 0.5,
+            "count": 1,
+            "confidence": 0.5351562477526253,
+            "target_support": 0.03
+          },
+          {
+            "lower": 0.8,
+            "count": 1,
+            "confidence": 0.8994984901506881,
+            "target_support": 0.9
+          }
+        ]
+      },
+      "朋友": {
+        "count": 3,
+        "accuracy_against_target_mode": 0.6666666666666666,
+        "nll": 0.7193342569999784,
+        "brier": 0.30520080283291356,
+        "ece_soft": 0.3564259733126049,
+        "coverage": 0.3333333333333333,
+        "accepted_accuracy_against_target_mode": 1.0,
+        "reliability_bins": [
+          {
+            "lower": 0.4,
+            "count": 1,
+            "confidence": 0.40570984075179356,
+            "target_support": 0.88
+          },
+          {
+            "lower": 0.5,
+            "count": 1,
+            "confidence": 0.5535473710316858,
+            "target_support": 0.02
+          },
+          {
+            "lower": 0.9,
+            "count": 1,
+            "confidence": 0.9614403896579224,
+            "target_support": 0.9
+          }
+        ]
+      },
+      "服务": {
+        "count": 3,
+        "accuracy_against_target_mode": 0.6666666666666666,
+        "nll": 0.7456786308931483,
+        "brier": 0.31165018203464284,
+        "ece_soft": 0.35279438568849136,
+        "coverage": 0.3333333333333333,
+        "accepted_accuracy_against_target_mode": 1.0,
+        "reliability_bins": [
+          {
+            "lower": 0.4,
+            "count": 1,
+            "confidence": 0.4093331618311442,
+            "target_support": 0.84
+          },
+          {
+            "lower": 0.5,
+            "count": 1,
+            "confidence": 0.5934509221781269,
+            "target_support": 0.03
+          },
+          {
+            "lower": 0.8,
+            "count": 1,
+            "confidence": 0.8357346032815085,
+            "target_support": 0.9
+          }
+        ]
+      },
+      "线上": {
+        "count": 3,
+        "accuracy_against_target_mode": 0.6666666666666666,
+        "nll": 0.7964612437241027,
+        "brier": 0.34500230428458395,
+        "ece_soft": 0.40870681115061075,
+        "coverage": 0.0,
+        "accepted_accuracy_against_target_mode": null,
+        "reliability_bins": [
+          {
+            "lower": 0.3,
+            "count": 1,
+            "confidence": 0.3933214408114164,
+            "target_support": 0.84
+          },
+          {
+            "lower": 0.5,
+            "count": 1,
+            "confidence": 0.5915816122218075,
+            "target_support": 0.02
+          },
+          {
+            "lower": 0.6,
+            "count": 1,
+            "confidence": 0.6921397379585588,
+            "target_support": 0.9
+          }
+        ]
+      },
+      "职场": {
+        "count": 3,
+        "accuracy_against_target_mode": 0.3333333333333333,
+        "nll": 0.7353469995241163,
+        "brier": 0.2884316881572612,
+        "ece_soft": 0.30729243991624655,
+        "coverage": 0.3333333333333333,
+        "accepted_accuracy_against_target_mode": 1.0,
+        "reliability_bins": [
+          {
+            "lower": 0.4,
+            "count": 1,
+            "confidence": 0.42636583859449234,
+            "target_support": 0.08
+          },
+          {
+            "lower": 0.5,
+            "count": 1,
+            "confidence": 0.5383070221573041,
+            "target_support": 0.04
+          },
+          {
+            "lower": 0.8,
+            "count": 1,
+            "confidence": 0.8227955410030567,
+            "target_support": 0.9
+          }
+        ]
+      },
+      "邻里": {
+        "count": 3,
+        "accuracy_against_target_mode": 0.3333333333333333,
+        "nll": 0.8060542730964055,
+        "brier": 0.3529270705825615,
+        "ece_soft": 0.22452219015124691,
+        "coverage": 0.0,
+        "accepted_accuracy_against_target_mode": null,
+        "reliability_bins": [
+          {
+            "lower": 0.3,
+            "count": 1,
+            "confidence": 0.3960061063358211,
+            "target_support": 0.08
+          },
+          {
+            "lower": 0.6,
+            "count": 2,
+            "confidence": 0.6437802320589598,
+            "target_support": 0.465
+          }
+        ]
+      }
+    }
+  }
+}
