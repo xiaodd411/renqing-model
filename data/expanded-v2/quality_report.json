@@ -1,0 +1,200 @@
+{
+  "schema_and_split_integrity": "passed",
+  "cross_split_group_leakage": 0,
+  "cross_split_exact_state_leakage": 0,
+  "unique_ids": 24396,
+  "examples": 24396,
+  "independent_groups": 4046,
+  "distinct_states": 5897,
+  "profiles": {
+    "train": {
+      "examples": 18020,
+      "groups": 3031,
+      "types": {
+        "choice": 4375,
+        "score": 632,
+        "noul": 13013
+      },
+      "distinct_states": 4375,
+      "sources": {
+        "dureader_yesno": 14972,
+        "synthetic_contrast_v2": 2880,
+        "original_demo": 168
+      },
+      "source_groups": {
+        "dureader_yesno": 2943,
+        "original_demo": 56,
+        "synthetic_contrast_v2": 32
+      },
+      "domains": {
+        "线上": 2921,
+        "朋友": 665,
+        "一般观点": 10056,
+        "伴侣": 1209,
+        "沟通": 176,
+        "校园": 172,
+        "服务": 733,
+        "协作": 457,
+        "职场": 433,
+        "邻里": 397,
+        "家庭": 801
+      },
+      "noul_target_classes": {
+        "no": 8381,
+        "yes": 4440,
+        "ambiguous": 192
+      },
+      "score_target_levels": {
+        "0": 412,
+        "1": 113,
+        "2": 107
+      },
+      "file_sha256": "cf9105386c49cb6952c1dde67b70aae2b090754a38737ac4ae78530fc7b039f9"
+    },
+    "validation": {
+      "examples": 2124,
+      "groups": 286,
+      "types": {
+        "choice": 495,
+        "score": 144,
+        "noul": 1485
+      },
+      "distinct_states": 495,
+      "sources": {
+        "dureader_yesno": 1404,
+        "synthetic_contrast_v2": 720
+      },
+      "source_groups": {
+        "dureader_yesno": 278,
+        "synthetic_contrast_v2": 8
+      },
+      "domains": {
+        "一般观点": 988,
+        "线上": 326,
+        "邻里": 90,
+        "协作": 90,
+        "伴侣": 166,
+        "家庭": 110,
+        "服务": 118,
+        "校园": 24,
+        "职场": 90,
+        "朋友": 114,
+        "沟通": 8
+      },
+      "noul_target_classes": {
+        "yes": 519,
+        "no": 918,
+        "ambiguous": 48
+      },
+      "score_target_levels": {
+        "0": 96,
+        "1": 24,
+        "2": 24
+      },
+      "file_sha256": "6381cff1f699b5340f31112019c67802f20ddd592b70b1c35892791a1b324102"
+    },
+    "calibration": {
+      "examples": 2104,
+      "groups": 290,
+      "types": {
+        "choice": 490,
+        "score": 144,
+        "noul": 1470
+      },
+      "distinct_states": 490,
+      "sources": {
+        "synthetic_contrast_v2": 720,
+        "dureader_yesno": 1384
+      },
+      "source_groups": {
+        "dureader_yesno": 282,
+        "synthetic_contrast_v2": 8
+      },
+      "domains": {
+        "伴侣": 134,
+        "一般观点": 956,
+        "线上": 326,
+        "家庭": 118,
+        "服务": 170,
+        "邻里": 90,
+        "协作": 114,
+        "朋友": 102,
+        "职场": 94
+      },
+      "noul_target_classes": {
+        "ambiguous": 48,
+        "no": 908,
+        "yes": 514
+      },
+      "score_target_levels": {
+        "0": 96,
+        "1": 24,
+        "2": 24
+      },
+      "file_sha256": "10a0e5f22a805c04759e1f311e1333d9a6a0d09f3d6c79856ff56f0fb95364a5"
+    },
+    "test": {
+      "examples": 2148,
+      "groups": 439,
+      "types": {
+        "choice": 537,
+        "score": 32,
+        "noul": 1579
+      },
+      "distinct_states": 537,
+      "sources": {
+        "dureader_yesno": 2020,
+        "synthetic_challenge_v2": 128
+      },
+      "source_groups": {
+        "dureader_yesno": 407,
+        "synthetic_challenge_v2": 32
+      },
+      "domains": {
+        "一般观点": 1800,
+        "服务": 20,
+        "伴侣": 56,
+        "线上": 56,
+        "家庭": 100,
+        "协作": 16,
+        "朋友": 44,
+        "职场": 16,
+        "校园": 24,
+        "邻里": 16
+      },
+      "noul_target_classes": {
+        "no": 1040,
+        "yes": 535,
+        "ambiguous": 4
+      },
+      "score_target_levels": {
+        "1": 7,
+        "0": 21,
+        "2": 4
+      },
+      "file_sha256": "a017e959f5d593dfb0d046152157f2c0d8cf397513351008b7a4ac7c9bdb63b0"
+    }
+  },
+  "findings": [
+    {
+      "severity": "high",
+      "issue": "部分人际标签仍来自合成规则，尚未经独立人工复核",
+      "impact": "不能据内部准确率认定真实社交可靠性"
+    },
+    {
+      "severity": "high",
+      "issue": "公开人工标签是回答立场，不是客观事实或情商",
+      "impact": "仅能证明辅助观点理解能力，应与人际挑战表现分开报告"
+    },
+    {
+      "severity": "medium",
+      "issue": "原始问题派生多个相关任务；模板有多种改写",
+      "impact": "行数高于独立证据数量，按问题簇或模板族隔离和统计"
+    },
+    {
+      "severity": "medium",
+      "issue": "词面 MinHash 近重复检查并非完整语义去重",
+      "impact": "仍需人工审查语义近重复"
+    }
+  ]
+}

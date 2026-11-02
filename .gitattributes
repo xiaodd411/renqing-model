@@ -1,3 +1,5 @@
 * text=auto eol=lf
 *.safetensors binary
 *.zip binary
+/data/expanded-v2/*.jsonl -text whitespace=trailing-space,space-before-tab,cr-at-eol
+/data/challenge_v2.jsonl -text whitespace=trailing-space,space-before-tab,cr-at-eol

@@ -83,6 +83,10 @@ def train(args):
     for epoch in range(1, args.epochs + 1):
         model.train()
         examples = splits["train"].copy()
+        if args.balance_tasks:
+            strata = {kind: [ex for ex in examples if ex.question.kind == kind] for kind in sorted({ex.question.kind for ex in examples})}
+            kinds = list(strata)
+            examples = [generator.choice(strata[kinds[i % len(kinds)]]) for i in range(len(examples))]
         generator.shuffle(examples)
         total_loss = 0.0
         for offset in range(0, len(examples), args.batch_size):
@@ -107,12 +111,17 @@ def train(args):
             step += 1
         logits = collect_logits(model, tokenizer, splits["validation"], args.max_length, args.batch_size)
         metrics = evaluate(logits, [x.target for x in splits["validation"]])
+        selection_nll = metrics["nll"]
+        if args.balance_tasks:
+            by_type = sliced_metrics(splits["validation"], logits, 1.0, args.threshold)["by_type"]
+            selection_nll = float(np.mean([m["nll"] for m in by_type.values()]))
         entry = {"epoch": epoch, "train_loss": total_loss / len(examples), "validation_nll": metrics["nll"],
+                 "selection_nll": selection_nll,
                  "validation_accuracy": metrics["accuracy_against_target_mode"]}
         history.append(entry)
         print(json.dumps(entry), flush=True)
-        if metrics["nll"] < best_nll - 1e-5:
-            best_nll, best_epoch, stale = metrics["nll"], epoch, 0
+        if selection_nll < best_nll - 1e-5:
+            best_nll, best_epoch, stale = selection_nll, epoch, 0
             model.save(output, tokenizer, {**metadata, "best_epoch": epoch})
         else:
             stale += 1
@@ -134,7 +143,7 @@ def train(args):
     save_json(output / "calibration.json", calibration)
     test_logits = collect_logits(model, tokenizer, splits["test"], args.max_length, args.batch_size)
     test_targets = [x.target for x in splits["test"]]
-    report = {"test_scope": "heldout scenario groups; author-assigned synthetic labels; not a real-world benchmark",
+    report = {"test_scope": manifest.get("source", "heldout scenario groups; inspect provenance for label meaning"),
               "best_epoch": best_epoch, "training_seconds": time.perf_counter() - start,
               "threshold": args.threshold, "temperature": temperature,
               "uniform_baseline": evaluate([np.zeros(len(x.target)) for x in splits["test"]], test_targets, threshold=args.threshold),

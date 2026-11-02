@@ -2,7 +2,9 @@
 
 输入中文人际场景和一组有明确答案空间的问题，输出候选概率、期望分数或真假概率。项目包含原创演示数据、真实神经网络训练、独立校准、测试评估和离线推理。
 
-本机已训练权重和完整实测结论见 [RESULTS.md](RESULTS.md)。综合测试为 13/24，其中是非判断仅 1/8；当前版本是用于数据迭代的实验原型。
+首版 240 条合成数据的历史实测结论见 [RESULTS.md](RESULTS.md)。扩展数据为 24,396 条，来源与计数口径见 [data/DATA_SOURCES.md](data/DATA_SOURCES.md)。新增公开回答立场标签和语境对照数据，仍属于需要独立人工验证的实验模型。
+
+扩展训练实测见 [RESULTS_V2.md](RESULTS_V2.md)：公开立场任务改善，但非模板化人际挑战没有可信提升，部分任务退步。默认权重继续保留 v0.1，新权重仅供显式选择的实验使用。
 
 参考 [TypeSafe 官方 Jev 介绍](https://typesafe.ai/blog/introducing-system-one-models-and-jev) 和[问题类型文档](https://docs.typesafe.ai/introduction)，采用类似的类型化决策思路。这里的模型结构、训练方法和请求协议由本项目定义；训练使用软标签交叉熵与温度缩放，没有实现或声称复现 TypeSafe 的 RLCD、采样器及性能。
 
@@ -67,6 +69,34 @@ print(result)
 ```
 
 模型为每个 `(场景, 问题, 候选项)` 独立编码并输出一个实数，再在同一问题内 softmax。输入的问题互不影响；候选顺序改变只会改变概率的顺序。它对候选集合内的相对偏好建模，不能判断未提供的选项。添加或删去选项可能改变分布。
+
+## 扩展数据 v0.2
+
+| 集合 | 决策记录 | 隔离分组 |
+| --- | ---: | ---: |
+| train | 18,020 | 3,031 |
+| validation | 2,124 | 286 |
+| calibration | 2,104 | 290 |
+| test | 2,148 | 439 |
+| 合计 | 24,396 | 4,046 |
+
+这些记录来自 4,945 个公开问答对、48 个合成语义场景族的 864 种文本、56 个旧训练场景和 32 个新冻结挑战场景。总行数不代表独立人际事件数量。公开任务测量回答的观点立场，人际标签仍需独立人工复核。
+
+```powershell
+# 直接使用已生成的数据训练，约 12GB NVIDIA 显存可运行本次配置
+.\train-expanded.ps1 -Output runs\my-expanded-run
+
+# 使用本次扩展数据训练得到的权重
+.\predict.ps1 -Model runs\renqing-v2
+
+# 从官方公开归档复现扩展数据；首次下载约 135MB
+.venv\Scripts\python.exe scripts\build_challenge_v2.py
+.venv\Scripts\python.exe scripts\prepare_expanded.py
+```
+
+数据构建脚本、审计脚本和挑战集构建脚本均拒绝覆盖已有输出；复现时请使用空目录或显式给新的 `--output`。`scripts/audit_expanded.py` 保存数据质量证据，`scripts/compare_checkpoints.py` 在同一冻结测试集比较新旧模型。`--balance-tasks` 只改变训练采样权重，不增加独立数据数量；验证轮次按各任务 NLL 的平均值选择。
+
+概率目标恰为 `[0.5, 0.5]` 时仍参与 NLL/Brier/ECE，但不纳入唯一目标众数准确率；报告单独给出 `ambiguous_count` 和高置信度接受的模糊样本数，避免把不确定问题硬算成“是”。
 
 ## 数据与训练
 

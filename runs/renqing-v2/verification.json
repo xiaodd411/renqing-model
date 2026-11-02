@@ -1,0 +1,58 @@
+{
+  "offline_cpu_load_and_inference": "passed",
+  "probability_normalization": "passed",
+  "question_isolation": "passed",
+  "candidate_permutation": "passed",
+  "cpu_gpu_max_probability_difference": 1.4248271956729397e-07,
+  "cpu_gpu_parity_tolerance": 2e-05,
+  "example_prediction": {
+    "model": "renqing-0.2.0",
+    "answers": {
+      "response": {
+        "type": "choice",
+        "probabilities": [
+          0.17674272697891577,
+          0.4769544256887895,
+          0.3463028473322947
+        ],
+        "confidence": 0.4769544256887895,
+        "confidence_definition": "max_class_probability",
+        "calibration_status": "synthetic_demo_only",
+        "needs_review": true,
+        "choice": "这周末我已经有安排，不能接这份报告。周一可以一起确认需要我配合的部分。",
+        "index": 1
+      },
+      "pressure": {
+        "type": "noul",
+        "probabilities": [
+          0.46334617009668333,
+          0.5366538299033168
+        ],
+        "confidence": 0.5366538299033168,
+        "confidence_definition": "max_class_probability",
+        "calibration_status": "synthetic_demo_only",
+        "needs_review": true,
+        "noul": 0.46334617009668333
+      },
+      "risk": {
+        "type": "score",
+        "probabilities": [
+          0.7671608386120506,
+          0.20071362840889037,
+          0.032125532979059096
+        ],
+        "confidence": 0.7671608386120506,
+        "confidence_definition": "max_class_probability",
+        "calibration_status": "synthetic_demo_only",
+        "needs_review": true,
+        "score": 0.13248234718350427,
+        "level": "低：没有明显冲突或关系损害迹象",
+        "values": [
+          0.0,
+          0.5,
+          1.0
+        ]
+      }
+    }
+  }
+}

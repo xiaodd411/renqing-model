@@ -1,0 +1,176 @@
+{
+  "base_model": "hfl/rbt3",
+  "base_revision": "0aa0527ff4170f29e1dfd3eb6ef60dc67e1bf75c",
+  "seed": 42,
+  "max_length": 256,
+  "split_stats": {
+    "train": {
+      "examples": 18020,
+      "groups": 3031,
+      "types": {
+        "choice": 4375,
+        "score": 632,
+        "noul": 13013
+      }
+    },
+    "validation": {
+      "examples": 2124,
+      "groups": 286,
+      "types": {
+        "choice": 495,
+        "score": 144,
+        "noul": 1485
+      }
+    },
+    "calibration": {
+      "examples": 2104,
+      "groups": 290,
+      "types": {
+        "choice": 490,
+        "score": 144,
+        "noul": 1470
+      }
+    },
+    "test": {
+      "examples": 2148,
+      "groups": 439,
+      "types": {
+        "choice": 537,
+        "score": 32,
+        "noul": 1579
+      }
+    }
+  },
+  "dataset_manifest": {
+    "version": "0.2.0",
+    "seed": 20261102,
+    "source": "mixed_public_opinion_polarity_and_original_synthetic_social_contrasts",
+    "human_reviewed": false,
+    "review_note": "public polarity labels are human sourced; synthetic social labels are not externally reviewed",
+    "max_length": 256,
+    "splits": {
+      "train": {
+        "examples": 18020,
+        "groups": 3031,
+        "types": {
+          "choice": 4375,
+          "score": 632,
+          "noul": 13013
+        }
+      },
+      "validation": {
+        "examples": 2124,
+        "groups": 286,
+        "types": {
+          "choice": 495,
+          "score": 144,
+          "noul": 1485
+        }
+      },
+      "calibration": {
+        "examples": 2104,
+        "groups": 290,
+        "types": {
+          "choice": 490,
+          "score": 144,
+          "noul": 1470
+        }
+      },
+      "test": {
+        "examples": 2148,
+        "groups": 439,
+        "types": {
+          "choice": 537,
+          "score": 32,
+          "noul": 1579
+        }
+      }
+    },
+    "source_counts": {
+      "train": {
+        "dureader_yesno": 14972,
+        "synthetic_contrast_v2": 2880,
+        "original_demo": 168
+      },
+      "validation": {
+        "dureader_yesno": 1404,
+        "synthetic_contrast_v2": 720
+      },
+      "calibration": {
+        "synthetic_contrast_v2": 720,
+        "dureader_yesno": 1384
+      },
+      "test": {
+        "dureader_yesno": 2020,
+        "synthetic_challenge_v2": 128
+      }
+    },
+    "unique_state_count": 5897,
+    "independent_group_count": 4046,
+    "synthetic_family_count": 48,
+    "overlength_tasks_removed": 0,
+    "source_audit": {
+      "train_raw": 75391,
+      "off_topic_filtered": 1223,
+      "empty_or_over_200_characters": 2369,
+      "duplicate_pairs": 97,
+      "contact_or_url_filtered": 30,
+      "dev_raw": 5462,
+      "conflicting_pairs_removed": 2,
+      "near_duplicates": {
+        "questions": 3911,
+        "candidate_pairs_checked": 295,
+        "near_question_merges": 1,
+        "method": "character_trigram_minhash_lsh",
+        "jaccard_threshold": 0.85,
+        "limitation": "approximate lexical matches only; no claim of complete semantic deduplication"
+      }
+    },
+    "upstream": {
+      "url": "https://bj.bcebos.com/paddlenlp/datasets/dureader_yesno-data.tar.gz",
+      "md5": "30c744d65e87fdce00cdc707fd008138",
+      "sha256": "c6fdbc76771e0eb3c36de78017da64a1097992536d204e98eb5d7e32abe1c44d",
+      "project": "https://github.com/baidu/DuReader",
+      "license": "Apache-2.0",
+      "label_meaning": "stance of an answer, NOT objective truth of question or social appropriateness"
+    },
+    "quality_limitations": [
+      "lexical near-duplicate screening is approximate",
+      "synthetic variants do not increase independent template-family count",
+      "opinion recognition is auxiliary and not an empathy or social intelligence benchmark",
+      "synthetic target probabilities are author assignments, not measured human agreement"
+    ]
+  },
+  "parameters": 38477569,
+  "data_sha256": {
+    "train": "cf9105386c49cb6952c1dde67b70aae2b090754a38737ac4ae78530fc7b039f9",
+    "validation": "6381cff1f699b5340f31112019c67802f20ddd592b70b1c35892791a1b324102",
+    "calibration": "10a0e5f22a805c04759e1f311e1333d9a6a0d09f3d6c79856ff56f0fb95364a5",
+    "test": "a017e959f5d593dfb0d046152157f2c0d8cf397513351008b7a4ac7c9bdb63b0"
+  },
+  "environment": {
+    "python": "3.12.13",
+    "torch": "2.8.0+cu128",
+    "transformers": "4.57.3",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 5070"
+  },
+  "hyperparameters": {
+    "command": "train",
+    "data": "data\\expanded-v2",
+    "output": "runs\\renqing-v2",
+    "base_model": "..\\..\\work\\base-rbt3",
+    "revision": "0aa0527ff4170f29e1dfd3eb6ef60dc67e1bf75c",
+    "epochs": 8,
+    "patience": 3,
+    "batch_size": 24,
+    "lr": 2e-05,
+    "max_length": 256,
+    "seed": 42,
+    "threads": 4,
+    "device": "cuda",
+    "threshold": 0.8,
+    "balance_tasks": true
+  },
+  "best_epoch": 2
+}

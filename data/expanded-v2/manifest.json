@@ -1,0 +1,100 @@
+{
+  "version": "0.2.0",
+  "seed": 20261102,
+  "source": "mixed_public_opinion_polarity_and_original_synthetic_social_contrasts",
+  "human_reviewed": false,
+  "review_note": "public polarity labels are human sourced; synthetic social labels are not externally reviewed",
+  "max_length": 256,
+  "splits": {
+    "train": {
+      "examples": 18020,
+      "groups": 3031,
+      "types": {
+        "choice": 4375,
+        "score": 632,
+        "noul": 13013
+      }
+    },
+    "validation": {
+      "examples": 2124,
+      "groups": 286,
+      "types": {
+        "choice": 495,
+        "score": 144,
+        "noul": 1485
+      }
+    },
+    "calibration": {
+      "examples": 2104,
+      "groups": 290,
+      "types": {
+        "choice": 490,
+        "score": 144,
+        "noul": 1470
+      }
+    },
+    "test": {
+      "examples": 2148,
+      "groups": 439,
+      "types": {
+        "choice": 537,
+        "score": 32,
+        "noul": 1579
+      }
+    }
+  },
+  "source_counts": {
+    "train": {
+      "dureader_yesno": 14972,
+      "synthetic_contrast_v2": 2880,
+      "original_demo": 168
+    },
+    "validation": {
+      "dureader_yesno": 1404,
+      "synthetic_contrast_v2": 720
+    },
+    "calibration": {
+      "synthetic_contrast_v2": 720,
+      "dureader_yesno": 1384
+    },
+    "test": {
+      "dureader_yesno": 2020,
+      "synthetic_challenge_v2": 128
+    }
+  },
+  "unique_state_count": 5897,
+  "independent_group_count": 4046,
+  "synthetic_family_count": 48,
+  "overlength_tasks_removed": 0,
+  "source_audit": {
+    "train_raw": 75391,
+    "off_topic_filtered": 1223,
+    "empty_or_over_200_characters": 2369,
+    "duplicate_pairs": 97,
+    "contact_or_url_filtered": 30,
+    "dev_raw": 5462,
+    "conflicting_pairs_removed": 2,
+    "near_duplicates": {
+      "questions": 3911,
+      "candidate_pairs_checked": 295,
+      "near_question_merges": 1,
+      "method": "character_trigram_minhash_lsh",
+      "jaccard_threshold": 0.85,
+      "limitation": "approximate lexical matches only; no claim of complete semantic deduplication"
+    }
+  },
+  "upstream": {
+    "url": "https://bj.bcebos.com/paddlenlp/datasets/dureader_yesno-data.tar.gz",
+    "md5": "30c744d65e87fdce00cdc707fd008138",
+    "sha256": "c6fdbc76771e0eb3c36de78017da64a1097992536d204e98eb5d7e32abe1c44d",
+    "project": "https://github.com/baidu/DuReader",
+    "license": "Apache-2.0",
+    "label_meaning": "stance of an answer, NOT objective truth of question or social appropriateness"
+  },
+  "quality_limitations": [
+    "lexical near-duplicate screening is approximate",
+    "synthetic variants do not increase independent template-family count",
+    "opinion recognition is auxiliary and not an empathy or social intelligence benchmark",
+    "synthetic target probabilities are author assignments, not measured human agreement"
+  ]
+}

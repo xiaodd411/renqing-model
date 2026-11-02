@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import json
 import math
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
@@ -70,6 +70,7 @@ class Example:
     state: str
     question: Question
     target: tuple[float, ...]
+    metadata: dict[str, Any] = field(default_factory=dict)
 
     @classmethod
     def parse(cls, data: dict) -> "Example":
@@ -83,12 +84,18 @@ class Example:
             raise ValueError("target 必须是非负有限概率")
         if not math.isclose(sum(target), 1.0, abs_tol=1e-5):
             raise ValueError("target 概率之和必须为 1")
+        metadata = data.get("metadata", {})
+        if not isinstance(metadata, dict):
+            raise ValueError("metadata 必须是对象")
         return cls(text(data.get("id"), "id", 200), text(data.get("group_id"), "group_id", 200),
-                   text(data.get("domain"), "domain", 100), text(data.get("state"), "state"), q, tuple(target))
+                   text(data.get("domain"), "domain", 100), text(data.get("state"), "state"), q, tuple(target), dict(metadata))
 
     def as_dict(self) -> dict:
-        return {"id": self.id, "group_id": self.group_id, "domain": self.domain, "state": self.state,
-                "question": self.question.as_dict(), "target": list(self.target)}
+        result = {"id": self.id, "group_id": self.group_id, "domain": self.domain, "state": self.state,
+                  "question": self.question.as_dict(), "target": list(self.target)}
+        if self.metadata:
+            result["metadata"] = self.metadata
+        return result
 
 
 def read_examples(path: str | Path) -> list[Example]:

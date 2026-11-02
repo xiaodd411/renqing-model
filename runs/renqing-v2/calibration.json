@@ -1,0 +1,119 @@
+{
+  "method": "scalar_temperature_nll_grid",
+  "temperature": 1.2589254117941675,
+  "fit_split": "calibration",
+  "fit_examples": 2104,
+  "before": {
+    "count": 2104,
+    "unambiguous_count": 2056,
+    "ambiguous_count": 48,
+    "accuracy_against_target_mode": 0.857976653696498,
+    "nll": 0.45169245294349025,
+    "brier": 0.21194198408327602,
+    "ece_soft": 0.03657872671065694,
+    "coverage": 0.6734790874524715,
+    "accepted_accuracy_against_target_mode": 0.9301340860973889,
+    "ambiguous_accepted_count": 0,
+    "reliability_bins": [
+      {
+        "lower": 0.3,
+        "count": 5,
+        "confidence": 0.37276537590847736,
+        "target_support": 0.4
+      },
+      {
+        "lower": 0.4,
+        "count": 40,
+        "confidence": 0.4598601087293021,
+        "target_support": 0.45
+      },
+      {
+        "lower": 0.5,
+        "count": 180,
+        "confidence": 0.5519401836415871,
+        "target_support": 0.6098888888888889
+      },
+      {
+        "lower": 0.6,
+        "count": 205,
+        "confidence": 0.6502095320787494,
+        "target_support": 0.6665365853658537
+      },
+      {
+        "lower": 0.7,
+        "count": 257,
+        "confidence": 0.7516674360380851,
+        "target_support": 0.7886381322957199
+      },
+      {
+        "lower": 0.8,
+        "count": 309,
+        "confidence": 0.8562558312275095,
+        "target_support": 0.816569579288026
+      },
+      {
+        "lower": 0.9,
+        "count": 1108,
+        "confidence": 0.9627335107163443,
+        "target_support": 0.9258303249097475
+      }
+    ]
+  },
+  "after": {
+    "count": 2104,
+    "unambiguous_count": 2056,
+    "ambiguous_count": 48,
+    "accuracy_against_target_mode": 0.857976653696498,
+    "nll": 0.44290931014604534,
+    "brier": 0.21223725522903944,
+    "ece_soft": 0.024407641559088294,
+    "coverage": 0.6050380228136882,
+    "accepted_accuracy_against_target_mode": 0.9497250589159466,
+    "ambiguous_accepted_count": 0,
+    "reliability_bins": [
+      {
+        "lower": 0.3,
+        "count": 8,
+        "confidence": 0.37665654812951965,
+        "target_support": 0.25
+      },
+      {
+        "lower": 0.4,
+        "count": 53,
+        "confidence": 0.45425201563009016,
+        "target_support": 0.4528301886792453
+      },
+      {
+        "lower": 0.5,
+        "count": 229,
+        "confidence": 0.5520427552278858,
+        "target_support": 0.6058515283842795
+      },
+      {
+        "lower": 0.6,
+        "count": 261,
+        "confidence": 0.6518907137090583,
+        "target_support": 0.7221455938697319
+      },
+      {
+        "lower": 0.7,
+        "count": 280,
+        "confidence": 0.7498071448194066,
+        "target_support": 0.8028571428571429
+      },
+      {
+        "lower": 0.8,
+        "count": 437,
+        "confidence": 0.8558973396542363,
+        "target_support": 0.8637986270022884
+      },
+      {
+        "lower": 0.9,
+        "count": 836,
+        "confidence": 0.9486118108020049,
+        "target_support": 0.9470574162679427
+      }
+    ]
+  },
+  "scope": "synthetic_demo_only"
+}

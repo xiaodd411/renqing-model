@@ -25,6 +25,7 @@ def main():
     t.add_argument("--threads", type=int, default=4)
     t.add_argument("--device", default="auto", choices=["auto", "cpu", "cuda"])
     t.add_argument("--threshold", type=float, default=0.8)
+    t.add_argument("--balance-tasks", action="store_true", help="按任务类型均衡采样，并按验证集任务平均 NLL 选轮次")
     p = sub.add_parser("predict")
     p.add_argument("--model", default="runs/renqing-v1")
     p.add_argument("--input", required=True, help="JSON 文件路径；- 代表 stdin")

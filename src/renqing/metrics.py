@@ -21,6 +21,7 @@ def evaluate(logits, targets, temperature=1.0, threshold=0.8):
     targets = [np.asarray(t) for t in targets]
     predictions = [int(p.argmax()) for p in probabilities]
     correct = np.array([i == int(t.argmax()) for i, t in zip(predictions, targets)])
+    unambiguous = np.array([np.count_nonzero(np.isclose(t, t.max(), atol=1e-10, rtol=0)) == 1 for t in targets])
     # For soft targets, reliability = target mass on the selected candidate.
     support = np.array([float(t[i]) for i, t in zip(predictions, targets)])
     conf = np.array([float(p.max()) for p in probabilities])
@@ -34,11 +35,14 @@ def evaluate(logits, targets, temperature=1.0, threshold=0.8):
             ece += n / len(conf) * abs(mean_conf - mean_support)
             bins.append({"lower": i / 10, "count": n, "confidence": mean_conf, "target_support": mean_support})
     accept = conf >= threshold
-    return {"count": len(targets), "accuracy_against_target_mode": float(correct.mean()),
+    accepted_unambiguous = accept & unambiguous
+    return {"count": len(targets), "unambiguous_count": int(unambiguous.sum()), "ambiguous_count": int((~unambiguous).sum()),
+            "accuracy_against_target_mode": float(correct[unambiguous].mean()) if unambiguous.any() else None,
             "nll": float(np.mean([-np.sum(t * np.log(np.maximum(p, 1e-12))) for p, t in zip(probabilities, targets)])),
             "brier": float(np.mean([np.sum((p - t) ** 2) for p, t in zip(probabilities, targets)])),
             "ece_soft": float(ece), "coverage": float(accept.mean()),
-            "accepted_accuracy_against_target_mode": float(correct[accept].mean()) if accept.any() else None,
+            "accepted_accuracy_against_target_mode": float(correct[accepted_unambiguous].mean()) if accepted_unambiguous.any() else None,
+            "ambiguous_accepted_count": int((accept & ~unambiguous).sum()),
             "reliability_bins": bins}
 
 

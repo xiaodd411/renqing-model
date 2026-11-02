@@ -108,6 +108,7 @@ class Predictor:
         chunks = torch.cat(outputs).split(sizes)
         temperature = self.calibration["temperature"] if self.calibration else 1.0
         calibration_scope = self.calibration.get("scope", "heldout_dataset_only") if self.calibration else "uncalibrated"
-        return {"model": "renqing-0.1", "answers": {
+        version = self.meta.get("dataset_manifest", {}).get("version", "0.1")
+        return {"model": f"renqing-{version}", "answers": {
             key: decision_result(q, logit.numpy(), temperature, threshold, self.calibration is not None, calibration_scope)
             for (key, q), logit in zip(questions.items(), chunks)}}

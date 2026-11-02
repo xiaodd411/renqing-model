@@ -5,5 +5,7 @@ __pycache__/
 /runs/*
 !/runs/renqing-v1/
 /runs/renqing-v1/encoder/*.safetensors
+!/runs/renqing-v2/
+/runs/renqing-v2/encoder/*.safetensors
 cache/
 *.zip
