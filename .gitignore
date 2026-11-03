@@ -7,5 +7,12 @@ __pycache__/
 /runs/renqing-v1/encoder/*.safetensors
 !/runs/renqing-v2/
 /runs/renqing-v2/encoder/*.safetensors
+!/runs/causal-round1-base/
+!/runs/causal-round1-lora/
+!/runs/causal-round2/
+!/runs/causal-round3/
+!/runs/renqing-v3/
+!/runs/renqing-v3.1/
+*.failed-serialization.json
 cache/
 *.zip

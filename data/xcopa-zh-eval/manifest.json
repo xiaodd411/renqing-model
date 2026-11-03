@@ -1,0 +1,23 @@
+{
+  "source": "XCOPA Chinese human translation of causal commonsense questions",
+  "revision": "e2e9d7f105a758ee869cd13e0fe251ef93a29840",
+  "project": "https://github.com/cambridgeltl/xcopa",
+  "license": "CC-BY-4.0",
+  "training_use": false,
+  "scope": "causal commonsense; not an interpersonal or emotional-intelligence benchmark",
+  "pretraining_contamination": "cannot exclude exposure in foundation-model pretraining",
+  "files": {
+    "val": {
+      "url": "https://raw.githubusercontent.com/cambridgeltl/xcopa/e2e9d7f105a758ee869cd13e0fe251ef93a29840/data/zh/val.zh.jsonl",
+      "upstream_sha256": "8f638466c196342104bdbe9276e7d91fe0abcc044e9a9ad715f30c8ad618bcdd",
+      "examples": 100,
+      "converted_sha256": "ec6605c8b2979b403280a0b8aa6d924ad7b37932e3485318251c3e7f945693c1"
+    },
+    "test": {
+      "url": "https://raw.githubusercontent.com/cambridgeltl/xcopa/e2e9d7f105a758ee869cd13e0fe251ef93a29840/data/zh/test.zh.jsonl",
+      "upstream_sha256": "c9b42590399214b9f066adacac2465d7286f5e590181fe6bfd7f6139531b83d4",
+      "examples": 500,
+      "converted_sha256": "f336b0b06d9d053eb49ec845eeb477b9a2ca53830502496b15e44a16b0159611"
+    }
+  }
+}

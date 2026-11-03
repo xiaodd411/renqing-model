@@ -1,0 +1,1021 @@
+{
+  "scope": "mixed_profile_calibration_only_social_labels_unreviewed",
+  "temperature": 1.029200527194428,
+  "decision_fingerprint": "c24185d746b9ef7c3a2d3e930aa213a09ff498ee2272d770b91998cfc7e68bbc",
+  "profile_temperatures": {
+    "causal:choice": 0.9716279515771062,
+    "social:choice": 1.0,
+    "social:noul": 0.9172759353897796,
+    "social:score": 0.8659643233600653,
+    "stance:choice": 0.9440608762859236,
+    "stance:noul": 1.333521432163324
+  },
+  "profiles": {
+    "causal:choice": {
+      "temperature_fit_examples": 51,
+      "threshold_evidence_examples": 49,
+      "threshold_before": {
+        "count": 49,
+        "unambiguous_count": 49,
+        "ambiguous_count": 0,
+        "accuracy_against_target_mode": 0.8571428571428571,
+        "nll": 0.3272660575725547,
+        "brier": 0.2076963395582062,
+        "ece_soft": 0.08963236521998903,
+        "coverage": 0.5510204081632653,
+        "accepted_accuracy_against_target_mode": 1.0,
+        "ambiguous_accepted_count": 0,
+        "reliability_bins": [
+          {
+            "lower": 0.5,
+            "count": 10,
+            "confidence": 0.5558136083647227,
+            "target_support": 0.6
+          },
+          {
+            "lower": 0.6,
+            "count": 7,
+            "confidence": 0.6553598676769612,
+            "target_support": 0.5714285714285714
+          },
+          {
+            "lower": 0.7,
+            "count": 5,
+            "confidence": 0.7527451166389875,
+            "target_support": 1.0
+          },
+          {
+            "lower": 0.8,
+            "count": 9,
+            "confidence": 0.8409173106173943,
+            "target_support": 1.0
+          },
+          {
+            "lower": 0.9,
+            "count": 18,
+            "confidence": 0.9614119841978085,
+            "target_support": 1.0
+          }
+        ]
+      },
+      "threshold_after": {
+        "count": 49,
+        "unambiguous_count": 49,
+        "ambiguous_count": 0,
+        "accuracy_against_target_mode": 0.8571428571428571,
+        "nll": 0.3244691427107613,
+        "brier": 0.20670345795381392,
+        "ece_soft": 0.08698046240657349,
+        "coverage": 0.5510204081632653,
+        "accepted_accuracy_against_target_mode": 1.0,
+        "ambiguous_accepted_count": 0,
+        "reliability_bins": [
+          {
+            "lower": 0.5,
+            "count": 10,
+            "confidence": 0.5574174915327555,
+            "target_support": 0.6
+          },
+          {
+            "lower": 0.6,
+            "count": 7,
+            "confidence": 0.6595651350980265,
+            "target_support": 0.5714285714285714
+          },
+          {
+            "lower": 0.7,
+            "count": 5,
+            "confidence": 0.7586902513826274,
+            "target_support": 1.0
+          },
+          {
+            "lower": 0.8,
+            "count": 9,
+            "confidence": 0.8472476950407408,
+            "target_support": 1.0
+          },
+          {
+            "lower": 0.9,
+            "count": 18,
+            "confidence": 0.9645587700087069,
+            "target_support": 1.0
+          }
+        ]
+      }
+    },
+    "social:choice": {
+      "temperature_fit_examples": 108,
+      "threshold_evidence_examples": 36,
+      "threshold_before": {
+        "count": 36,
+        "unambiguous_count": 36,
+        "ambiguous_count": 0,
+        "accuracy_against_target_mode": 0.8888888888888888,
+        "nll": 0.6658386172942996,
+        "brier": 0.10214908480399396,
+        "ece_soft": 0.0973791369488845,
+        "coverage": 0.5277777777777778,
+        "accepted_accuracy_against_target_mode": 1.0,
+        "ambiguous_accepted_count": 0,
+        "reliability_bins": [
+          {
+            "lower": 0.3,
+            "count": 1,
+            "confidence": 0.39858905470840766,
+            "target_support": 0.04
+          },
+          {
+            "lower": 0.4,
+            "count": 7,
+            "confidence": 0.44940086991943984,
+            "target_support": 0.64
+          },
+          {
+            "lower": 0.5,
+            "count": 3,
+            "confidence": 0.550914890822949,
+            "target_support": 0.6
+          },
+          {
+            "lower": 0.6,
+            "count": 1,
+            "confidence": 0.6101030395889219,
+            "target_support": 0.88
+          },
+          {
+            "lower": 0.7,
+            "count": 5,
+            "confidence": 0.7690882558771038,
+            "target_support": 0.8800000000000001
+          },
+          {
+            "lower": 0.8,
+            "count": 6,
+            "confidence": 0.8563412197621408,
+            "target_support": 0.88
+          },
+          {
+            "lower": 0.9,
+            "count": 13,
+            "confidence": 0.9337847903772037,
+            "target_support": 0.8800000000000002
+          }
+        ]
+      },
+      "threshold_after": {
+        "count": 36,
+        "unambiguous_count": 36,
+        "ambiguous_count": 0,
+        "accuracy_against_target_mode": 0.8888888888888888,
+        "nll": 0.6658386172942996,
+        "brier": 0.10214908480399396,
+        "ece_soft": 0.0973791369488845,
+        "coverage": 0.5277777777777778,
+        "accepted_accuracy_against_target_mode": 1.0,
+        "ambiguous_accepted_count": 0,
+        "reliability_bins": [
+          {
+            "lower": 0.3,
+            "count": 1,
+            "confidence": 0.39858905470840766,
+            "target_support": 0.04
+          },
+          {
+            "lower": 0.4,
+            "count": 7,
+            "confidence": 0.44940086991943984,
+            "target_support": 0.64
+          },
+          {
+            "lower": 0.5,
+            "count": 3,
+            "confidence": 0.550914890822949,
+            "target_support": 0.6
+          },
+          {
+            "lower": 0.6,
+            "count": 1,
+            "confidence": 0.6101030395889219,
+            "target_support": 0.88
+          },
+          {
+            "lower": 0.7,
+            "count": 5,
+            "confidence": 0.7690882558771038,
+            "target_support": 0.8800000000000001
+          },
+          {
+            "lower": 0.8,
+            "count": 6,
+            "confidence": 0.8563412197621408,
+            "target_support": 0.88
+          },
+          {
+            "lower": 0.9,
+            "count": 13,
+            "confidence": 0.9337847903772037,
+            "target_support": 0.8800000000000002
+          }
+        ]
+      }
+    },
+    "social:noul": {
+      "temperature_fit_examples": 324,
+      "threshold_evidence_examples": 108,
+      "threshold_before": {
+        "count": 108,
+        "unambiguous_count": 96,
+        "ambiguous_count": 12,
+        "accuracy_against_target_mode": 1.0,
+        "nll": 0.22071908535986043,
+        "brier": 0.031044156474477648,
+        "ece_soft": 0.021410077867501483,
+        "coverage": 0.8148148148148148,
+        "accepted_accuracy_against_target_mode": 1.0,
+        "ambiguous_accepted_count": 2,
+        "reliability_bins": [
+          {
+            "lower": 0.5,
+            "count": 3,
+            "confidence": 0.5311286288043333,
+            "target_support": 0.5
+          },
+          {
+            "lower": 0.6,
+            "count": 4,
+            "confidence": 0.6438630578904816,
+            "target_support": 0.86
+          },
+          {
+            "lower": 0.7,
+            "count": 13,
+            "confidence": 0.7588316317121843,
+            "target_support": 0.7584615384615385
+          },
+          {
+            "lower": 0.8,
+            "count": 11,
+            "confidence": 0.8657048314338599,
+            "target_support": 0.9363636363636364
+          },
+          {
+            "lower": 0.9,
+            "count": 77,
+            "confidence": 0.9663338092421673,
+            "target_support": 0.9737662337662342
+          }
+        ]
+      },
+      "threshold_after": {
+        "count": 108,
+        "unambiguous_count": 96,
+        "ambiguous_count": 12,
+        "accuracy_against_target_mode": 1.0,
+        "nll": 0.21944408620737474,
+        "brier": 0.030187446476995686,
+        "ece_soft": 0.011395778567155934,
+        "coverage": 0.8518518518518519,
+        "accepted_accuracy_against_target_mode": 1.0,
+        "ambiguous_accepted_count": 4,
+        "reliability_bins": [
+          {
+            "lower": 0.5,
+            "count": 3,
+            "confidence": 0.5339111740263469,
+            "target_support": 0.5
+          },
+          {
+            "lower": 0.6,
+            "count": 4,
+            "confidence": 0.6559426432160727,
+            "target_support": 0.86
+          },
+          {
+            "lower": 0.7,
+            "count": 9,
+            "confidence": 0.7590404348064513,
+            "target_support": 0.7666666666666667
+          },
+          {
+            "lower": 0.8,
+            "count": 13,
+            "confidence": 0.8593778596831506,
+            "target_support": 0.8692307692307693
+          },
+          {
+            "lower": 0.9,
+            "count": 79,
+            "confidence": 0.9724549718332016,
+            "target_support": 0.9739240506329119
+          }
+        ]
+      }
+    },
+    "social:score": {
+      "temperature_fit_examples": 108,
+      "threshold_evidence_examples": 36,
+      "threshold_before": {
+        "count": 36,
+        "unambiguous_count": 36,
+        "ambiguous_count": 0,
+        "accuracy_against_target_mode": 1.0,
+        "nll": 0.4707441656212199,
+        "brier": 0.03685560080383696,
+        "ece_soft": 0.0994765276519257,
+        "coverage": 0.6111111111111112,
+        "accepted_accuracy_against_target_mode": 1.0,
+        "ambiguous_accepted_count": 0,
+        "reliability_bins": [
+          {
+            "lower": 0.4,
+            "count": 3,
+            "confidence": 0.48204465263948876,
+            "target_support": 0.9
+          },
+          {
+            "lower": 0.5,
+            "count": 1,
+            "confidence": 0.5796408653259277,
+            "target_support": 0.9
+          },
+          {
+            "lower": 0.6,
+            "count": 1,
+            "confidence": 0.6897734999656678,
+            "target_support": 0.9
+          },
+          {
+            "lower": 0.7,
+            "count": 9,
+            "confidence": 0.7449050198157293,
+            "target_support": 0.86
+          },
+          {
+            "lower": 0.8,
+            "count": 18,
+            "confidence": 0.8633275144321417,
+            "target_support": 0.8999999999999999
+          },
+          {
+            "lower": 0.9,
+            "count": 4,
+            "confidence": 0.925185939199876,
+            "target_support": 0.9
+          }
+        ]
+      },
+      "threshold_after": {
+        "count": 36,
+        "unambiguous_count": 36,
+        "ambiguous_count": 0,
+        "accuracy_against_target_mode": 1.0,
+        "nll": 0.45817322083486317,
+        "brier": 0.028782760830978096,
+        "ece_soft": 0.07822471670694243,
+        "coverage": 0.7222222222222222,
+        "accepted_accuracy_against_target_mode": 1.0,
+        "ambiguous_accepted_count": 0,
+        "reliability_bins": [
+          {
+            "lower": 0.4,
+            "count": 1,
+            "confidence": 0.4685071525390899,
+            "target_support": 0.9
+          },
+          {
+            "lower": 0.5,
+            "count": 2,
+            "confidence": 0.5245210857889788,
+            "target_support": 0.9
+          },
+          {
+            "lower": 0.6,
+            "count": 1,
+            "confidence": 0.6153982696228294,
+            "target_support": 0.9
+          },
+          {
+            "lower": 0.7,
+            "count": 6,
+            "confidence": 0.7644267875568581,
+            "target_support": 0.86
+          },
+          {
+            "lower": 0.8,
+            "count": 12,
+            "confidence": 0.8592905167700337,
+            "target_support": 0.8900000000000001
+          },
+          {
+            "lower": 0.9,
+            "count": 14,
+            "confidence": 0.929077451555097,
+            "target_support": 0.9000000000000001
+          }
+        ]
+      }
+    },
+    "stance:choice": {
+      "temperature_fit_examples": 197,
+      "threshold_evidence_examples": 149,
+      "threshold_before": {
+        "count": 149,
+        "unambiguous_count": 149,
+        "ambiguous_count": 0,
+        "accuracy_against_target_mode": 0.7114093959731543,
+        "nll": 0.6642512844429793,
+        "brier": 0.3821689500530089,
+        "ece_soft": 0.041494328051720784,
+        "coverage": 0.436241610738255,
+        "accepted_accuracy_against_target_mode": 0.8923076923076924,
+        "ambiguous_accepted_count": 0,
+        "reliability_bins": [
+          {
+            "lower": 0.3,
+            "count": 9,
+            "confidence": 0.38240633933882806,
+            "target_support": 0.4444444444444444
+          },
+          {
+            "lower": 0.4,
+            "count": 22,
+            "confidence": 0.45102644698756916,
+            "target_support": 0.4090909090909091
+          },
+          {
+            "lower": 0.5,
+            "count": 28,
+            "confidence": 0.541731372494103,
+            "target_support": 0.5714285714285714
+          },
+          {
+            "lower": 0.6,
+            "count": 11,
+            "confidence": 0.6546246751604261,
+            "target_support": 0.8181818181818182
+          },
+          {
+            "lower": 0.7,
+            "count": 14,
+            "confidence": 0.7540297124056735,
+            "target_support": 0.7142857142857143
+          },
+          {
+            "lower": 0.8,
+            "count": 28,
+            "confidence": 0.846099059263242,
+            "target_support": 0.8571428571428571
+          },
+          {
+            "lower": 0.9,
+            "count": 37,
+            "confidence": 0.9514983146573041,
+            "target_support": 0.918918918918919
+          }
+        ]
+      },
+      "threshold_after": {
+        "count": 149,
+        "unambiguous_count": 149,
+        "ambiguous_count": 0,
+        "accuracy_against_target_mode": 0.7114093959731543,
+        "nll": 0.6640339467725355,
+        "brier": 0.38201254619806346,
+        "ece_soft": 0.048930685852984504,
+        "coverage": 0.4697986577181208,
+        "accepted_accuracy_against_target_mode": 0.9,
+        "ambiguous_accepted_count": 0,
+        "reliability_bins": [
+          {
+            "lower": 0.3,
+            "count": 8,
+            "confidence": 0.3831373774195811,
+            "target_support": 0.5
+          },
+          {
+            "lower": 0.4,
+            "count": 22,
+            "confidence": 0.4522027488080992,
+            "target_support": 0.36363636363636365
+          },
+          {
+            "lower": 0.5,
+            "count": 26,
+            "confidence": 0.544740600151644,
+            "target_support": 0.6153846153846154
+          },
+          {
+            "lower": 0.6,
+            "count": 11,
+            "confidence": 0.6441208544377338,
+            "target_support": 0.6363636363636364
+          },
+          {
+            "lower": 0.7,
+            "count": 12,
+            "confidence": 0.7421298258664821,
+            "target_support": 0.6666666666666666
+          },
+          {
+            "lower": 0.8,
+            "count": 29,
+            "confidence": 0.8472251365566272,
+            "target_support": 0.8620689655172413
+          },
+          {
+            "lower": 0.9,
+            "count": 41,
+            "confidence": 0.9548587315254936,
+            "target_support": 0.926829268292683
+          }
+        ]
+      }
+    },
+    "stance:noul": {
+      "temperature_fit_examples": 591,
+      "threshold_evidence_examples": 447,
+      "threshold_before": {
+        "count": 447,
+        "unambiguous_count": 447,
+        "ambiguous_count": 0,
+        "accuracy_against_target_mode": 0.7158836689038032,
+        "nll": 0.590229264426885,
+        "brier": 0.39779258788919597,
+        "ece_soft": 0.08546495067734487,
+        "coverage": 0.41387024608501116,
+        "accepted_accuracy_against_target_mode": 0.8108108108108109,
+        "ambiguous_accepted_count": 0,
+        "reliability_bins": [
+          {
+            "lower": 0.5,
+            "count": 142,
+            "confidence": 0.5548165405493853,
+            "target_support": 0.6267605633802817
+          },
+          {
+            "lower": 0.6,
+            "count": 56,
+            "confidence": 0.6438247824525533,
+            "target_support": 0.6964285714285714
+          },
+          {
+            "lower": 0.7,
+            "count": 64,
+            "confidence": 0.7513075030758971,
+            "target_support": 0.65625
+          },
+          {
+            "lower": 0.8,
+            "count": 64,
+            "confidence": 0.8595784459936087,
+            "target_support": 0.671875
+          },
+          {
+            "lower": 0.9,
+            "count": 121,
+            "confidence": 0.9416881717990123,
+            "target_support": 0.8842975206611571
+          }
+        ]
+      },
+      "threshold_after": {
+        "count": 447,
+        "unambiguous_count": 447,
+        "ambiguous_count": 0,
+        "accuracy_against_target_mode": 0.7158836689038032,
+        "nll": 0.5742414942386062,
+        "brier": 0.39166132670859805,
+        "ece_soft": 0.05731665160895899,
+        "coverage": 0.34451901565995524,
+        "accepted_accuracy_against_target_mode": 0.8441558441558441,
+        "ambiguous_accepted_count": 0,
+        "reliability_bins": [
+          {
+            "lower": 0.5,
+            "count": 172,
+            "confidence": 0.5502107594141594,
+            "target_support": 0.6395348837209303
+          },
+          {
+            "lower": 0.6,
+            "count": 65,
+            "confidence": 0.6581471623281878,
+            "target_support": 0.6615384615384615
+          },
+          {
+            "lower": 0.7,
+            "count": 56,
+            "confidence": 0.7509202150953307,
+            "target_support": 0.6607142857142857
+          },
+          {
+            "lower": 0.8,
+            "count": 107,
+            "confidence": 0.8544244189396445,
+            "target_support": 0.822429906542056
+          },
+          {
+            "lower": 0.9,
+            "count": 47,
+            "confidence": 0.9268386078274853,
+            "target_support": 0.8936170212765957
+          }
+        ]
+      }
+    }
+  },
+  "temperature_fit_groups": [
+    "contrast-134838147328408ce028",
+    "contrast-295ee99afa36ed2e9e4b",
+    "contrast-2b6b608f2760648bf2d0",
+    "contrast-3c121673c76546f5f922",
+    "contrast-7f4a7f19544c89073f7e",
+    "contrast-88913e843d870de706d4",
+    "dureader-00ccb4b0ab1a923d712a",
+    "dureader-047757807102224ff078",
+    "dureader-0516ba33132ba23ff674",
+    "dureader-0521bca8589b825fc2c2",
+    "dureader-061d04cd00a428bb333d",
+    "dureader-06b22e96b2cf8081ba7f",
+    "dureader-0809a9423a6de3daa8e2",
+    "dureader-09e0145a11dd11572cf7",
+    "dureader-0b159fbc94699d0bb522",
+    "dureader-0b85b38248db1e3d4681",
+    "dureader-0bb6b2c437e1afee1a94",
+    "dureader-0d7c56ea7e4e33672db4",
+    "dureader-0e25b24f3c2ba81b2c75",
+    "dureader-0fb55b48b15659c10fe6",
+    "dureader-1008c05204368373477d",
+    "dureader-10579bce9141c0168a27",
+    "dureader-129078cc1ca10caf57e7",
+    "dureader-12a201a1f55e6d8766e6",
+    "dureader-16ebfe5abea27d44a912",
+    "dureader-18590f7253ff7f470661",
+    "dureader-1a5e03608d6af2d9eccc",
+    "dureader-1edb6f5397c964e3a571",
+    "dureader-1f3dcbd413131d4faec7",
+    "dureader-2659a04dc188f05701e2",
+    "dureader-29d2897099df0e145408",
+    "dureader-2d5ae84c801cd84ff106",
+    "dureader-2dd1889c1bcd36f4bb03",
+    "dureader-2df7031ea5286c3e44b0",
+    "dureader-2e881f822a225e8d1efe",
+    "dureader-2f52dbae8fd7175230da",
+    "dureader-30889a331d3fc231b5dc",
+    "dureader-319012921f6ba2cb271c",
+    "dureader-31b516163950565c4c5b",
+    "dureader-32ea95b5ec8de8a982da",
+    "dureader-37221b7bacda89343de5",
+    "dureader-3805ed8b9edf66b1b76d",
+    "dureader-3875bea19ca5ab333c68",
+    "dureader-39c7d5268193a2dcec9c",
+    "dureader-3c6198191a3332a996d2",
+    "dureader-3da80f904adbff4bbc97",
+    "dureader-3e162b00f0e3212227a4",
+    "dureader-3eeb7e0d24fed8b14e00",
+    "dureader-410f2fc1bb10adb79e15",
+    "dureader-4172096327d5fa4afc84",
+    "dureader-417f2472d0fe94155e25",
+    "dureader-427d5e5b521344f7cf3f",
+    "dureader-44a9b21ef073de3b655e",
+    "dureader-45bb79975f5e849f95cb",
+    "dureader-462e6e9f0e8873fc0386",
+    "dureader-46388dd3b80de1912f09",
+    "dureader-471226b30d9e57a6ee32",
+    "dureader-49cc0e5ee46775b46ae1",
+    "dureader-4b4bccb3acd50d3998cc",
+    "dureader-4bfd5355fb69f1a913b2",
+    "dureader-4c0ba343d9d4a38ad5e9",
+    "dureader-4e513e99029e060212e2",
+    "dureader-4ed8042440d79271dd83",
+    "dureader-5250107a12ced887425b",
+    "dureader-54d842be320411d7c3da",
+    "dureader-555dcc552f3146400108",
+    "dureader-560e0279f319db0c9bf5",
+    "dureader-5964a59e0a851c4b6d58",
+    "dureader-5974688202805617044c",
+    "dureader-5cb874b74e69bdb7e8e2",
+    "dureader-5d8cf6ea6245b12b4b00",
+    "dureader-5f59667c2d2df52e8c98",
+    "dureader-619dd6b4942be0ba964a",
+    "dureader-62a0543ee8411df662b0",
+    "dureader-631869716ccf452b3aac",
+    "dureader-63983e6669c3c155e0b6",
+    "dureader-6a1fde1639397ced71b6",
+    "dureader-6ab353d9d5af9f79bce9",
+    "dureader-6e85c0a1a0cccb38d2b5",
+    "dureader-73c6fd1757836ab6f85f",
+    "dureader-749e608c4ce7cd8afca0",
+    "dureader-74ebc07d0e701174c7b6",
+    "dureader-75e2f352a8a2b78bab22",
+    "dureader-7992821a3fb95b5b9ab3",
+    "dureader-7ace37485bba9f436f9f",
+    "dureader-7c5089b50b30c0a53fe6",
+    "dureader-7f50200721bfb6a255d0",
+    "dureader-7f5689ffca38bf8e59d8",
+    "dureader-7fbab2d6be115198d768",
+    "dureader-7fbf382e6907e67fec7b",
+    "dureader-81c8053dcab5f2fd59ef",
+    "dureader-84511c204eb35c4871cf",
+    "dureader-8465acfee811d09085c4",
+    "dureader-87b00fe9569a5f055f53",
+    "dureader-88c34640007d2f37b24f",
+    "dureader-89dfa7133f6e21a2ac8b",
+    "dureader-8a47de7f90b3ee01bdbc",
+    "dureader-8d3f025b986fbc53a295",
+    "dureader-8d9f7632a666c2b1337c",
+    "dureader-8e27d9f12ebebc4b4254",
+    "dureader-8f42bdbc7eddf407ce8c",
+    "dureader-98881697c0126ab62181",
+    "dureader-9e07fa8e2c620652c4cd",
+    "dureader-9f2dadf86dd29e056516",
+    "dureader-a2c246a9e00113b9f092",
+    "dureader-a324c2c3c5f1a8e07057",
+    "dureader-a350709cc865d8eacb0c",
+    "dureader-a4140d79e70981a09f69",
+    "dureader-a66f030443cb6b7d47b5",
+    "dureader-aa2b0212c043a6b2121d",
+    "dureader-ab9ddd2f70cdc446a387",
+    "dureader-ac4761f7a01d769483ec",
+    "dureader-acd8cbd5fc12f0e70596",
+    "dureader-ae3033e12e81c99a2af6",
+    "dureader-af144095b6172af19b99",
+    "dureader-b0845c6406138dd6c6ae",
+    "dureader-b1bcfcbbe3d10a09a8c4",
+    "dureader-b1ca12ad8815106a2eb9",
+    "dureader-b21465bac5608b118151",
+    "dureader-b22c2b7fcb11ab959958",
+    "dureader-b394d966a7df44a389da",
+    "dureader-b58063ce77e129019747",
+    "dureader-b7cb00754ae877680f59",
+    "dureader-b86af9a09d8ce3766737",
+    "dureader-b8b16cf9774e30b8f952",
+    "dureader-ba4bbf592488c4dac077",
+    "dureader-bc584ff1eb568c53384a",
+    "dureader-be77771646468df1b92d",
+    "dureader-beb56baccab8001a8896",
+    "dureader-bf9bc8b3b1ba8620c1b2",
+    "dureader-c11cb415c9e641f964f5",
+    "dureader-c172203d73635db81467",
+    "dureader-c3480ccf7a7e42293f56",
+    "dureader-c6320ab3fa154f9665f1",
+    "dureader-c63278fb974c83b70242",
+    "dureader-c71fa088a363224d52ab",
+    "dureader-c81b817f668e6b612465",
+    "dureader-c914c12c4e2fd2867904",
+    "dureader-c9f7efebef03c80e7949",
+    "dureader-cb68ef00459a2b8211b4",
+    "dureader-cc2a475f7e697525a8b1",
+    "dureader-ccbddea58d8c2458c88f",
+    "dureader-cfa2dc11abc7277f9703",
+    "dureader-cfcf1f250532b2ce1682",
+    "dureader-d0126650c3c5f9b3abe9",
+    "dureader-d16242ca487114dc0890",
+    "dureader-d46030de289f6279d0c3",
+    "dureader-d4e5a92c7f27b955e7c1",
+    "dureader-d59a128a8f058c32d518",
+    "dureader-d8a0b931db041a914fa7",
+    "dureader-d8daa5ee0a4d4fc46d56",
+    "dureader-de090cd75348a8452f87",
+    "dureader-deacc7dc6ddad2b2d9e9",
+    "dureader-e0b8dc52bc5d60260e28",
+    "dureader-e0f39372e8fc6c78b013",
+    "dureader-e152e632c30a3099bf68",
+    "dureader-e6d50515ff2046fe6026",
+    "dureader-e936cf9fc09aefb410f4",
+    "dureader-eace8eb90888be5098fc",
+    "dureader-eb2f2d082f452f37c75e",
+    "dureader-ec63b28acfa1d8ed7876",
+    "dureader-ec74640a32eecd58aa4a",
+    "dureader-ec7b580879b9bd06c50b",
+    "dureader-ecaab2c9ee3fa147ed1b",
+    "dureader-f7613aaff84e30dd34e0",
+    "dureader-f8095f4a1dac84d6e232",
+    "xcopa-original-val-0",
+    "xcopa-original-val-1",
+    "xcopa-original-val-14",
+    "xcopa-original-val-16",
+    "xcopa-original-val-17",
+    "xcopa-original-val-2",
+    "xcopa-original-val-20",
+    "xcopa-original-val-23",
+    "xcopa-original-val-24",
+    "xcopa-original-val-27",
+    "xcopa-original-val-28",
+    "xcopa-original-val-30",
+    "xcopa-original-val-32",
+    "xcopa-original-val-33",
+    "xcopa-original-val-36",
+    "xcopa-original-val-39",
+    "xcopa-original-val-40",
+    "xcopa-original-val-41",
+    "xcopa-original-val-42",
+    "xcopa-original-val-43",
+    "xcopa-original-val-44",
+    "xcopa-original-val-5",
+    "xcopa-original-val-51",
+    "xcopa-original-val-53",
+    "xcopa-original-val-54",
+    "xcopa-original-val-55",
+    "xcopa-original-val-56",
+    "xcopa-original-val-57",
+    "xcopa-original-val-58",
+    "xcopa-original-val-60",
+    "xcopa-original-val-61",
+    "xcopa-original-val-63",
+    "xcopa-original-val-64",
+    "xcopa-original-val-66",
+    "xcopa-original-val-68",
+    "xcopa-original-val-7",
+    "xcopa-original-val-72",
+    "xcopa-original-val-73",
+    "xcopa-original-val-74",
+    "xcopa-original-val-75",
+    "xcopa-original-val-8",
+    "xcopa-original-val-81",
+    "xcopa-original-val-83",
+    "xcopa-original-val-85",
+    "xcopa-original-val-9",
+    "xcopa-original-val-90",
+    "xcopa-original-val-92",
+    "xcopa-original-val-93",
+    "xcopa-original-val-94",
+    "xcopa-original-val-96",
+    "xcopa-original-val-99"
+  ],
+  "threshold_evidence_groups": [
+    "contrast-d93720653a63ce573a8c",
+    "contrast-f95b1758a095bd2bd926",
+    "dureader-0000463ae5ebe2ce64ee",
+    "dureader-0213aebc4c06c768765b",
+    "dureader-037de600fa314ab41b8a",
+    "dureader-054bf5359a3e332e1d88",
+    "dureader-0595130a8424f77e981c",
+    "dureader-07911799cae99c0f2bae",
+    "dureader-09cb8859fe30e8cfc97b",
+    "dureader-09f1017931beba96f0ad",
+    "dureader-0b31e1f2243f94c1ce6b",
+    "dureader-0ce4a95876340a760459",
+    "dureader-0e5b512210e3b366e039",
+    "dureader-105dc9ff0ea88df52122",
+    "dureader-13170dbe7dc898594783",
+    "dureader-150c89c437c0dc838432",
+    "dureader-1512bb4a220de3dc7a4f",
+    "dureader-167dd985726e48a375cf",
+    "dureader-2049f9156f8be3f42dab",
+    "dureader-2242f9b1c19382430a7a",
+    "dureader-24e38ddee7d79a7305bf",
+    "dureader-25560a6c5ba5af222f2c",
+    "dureader-2583e45aff9a9443631f",
+    "dureader-28d941c6b83c4ebfc28d",
+    "dureader-2a437aae3c6de72de285",
+    "dureader-2a90aef996e57ac9434e",
+    "dureader-2a9efb6a423f2deb73cf",
+    "dureader-2d6dd88a5094faa3eeae",
+    "dureader-31a668739075e351ccaf",
+    "dureader-31bd5197818ff40e8bca",
+    "dureader-32837193ee7d5b33039d",
+    "dureader-3303ceccd0c6f487226a",
+    "dureader-346a5a4bbaaadb73827a",
+    "dureader-368a49e1264286ed57b6",
+    "dureader-3727a9afa229f13bdeab",
+    "dureader-39d56539ace33c2dd3cd",
+    "dureader-3d0cba8804e6a7a50fb5",
+    "dureader-3d5f529c00d1352b6156",
+    "dureader-41459ca8f674900236ec",
+    "dureader-420c7fe0a641ce10f8fa",
+    "dureader-4629772ff96bd92934cb",
+    "dureader-46845bcf68d17f6c420a",
+    "dureader-4c7fbd8e97b1349b8bf0",
+    "dureader-50da51126148bee86fd8",
+    "dureader-5410de2037f1e6d5235d",
+    "dureader-55086315958926e1541e",
+    "dureader-560d5e186b865a00dd80",
+    "dureader-58318c95dc004d89a58e",
+    "dureader-5a379c64bc1972704a88",
+    "dureader-5d4ab13cb71b3520120a",
+    "dureader-5f792ef02cca1708638d",
+    "dureader-62e08d3e5626a2e67591",
+    "dureader-639db270ff993ad9b0aa",
+    "dureader-63b092b09fbd06442383",
+    "dureader-6847888fa346ecb63cc6",
+    "dureader-6b8a49c5c92d763a7d97",
+    "dureader-724f4db5c862886a4792",
+    "dureader-732957469896eb1a2131",
+    "dureader-747413a474131c508de3",
+    "dureader-77508b1825f62540073f",
+    "dureader-778fff8a14b0d14c387a",
+    "dureader-77bf359aad427567da50",
+    "dureader-7ba44176cae04280c2a4",
+    "dureader-7e99a275aa1aa9424346",
+    "dureader-7ee9e7b6813600aec67d",
+    "dureader-881214a7773f2390a679",
+    "dureader-89c058442bd109c7e2dd",
+    "dureader-8a0d12e15251b1e8d6b1",
+    "dureader-9476cd95fda3c6a96423",
+    "dureader-9f88fc355d24650c7539",
+    "dureader-a09707b0fa46c1960c5d",
+    "dureader-a2ee40575879a74d51ed",
+    "dureader-a4e5620184827d749bfe",
+    "dureader-a5aa095b06814a857333",
+    "dureader-a62c45564dc9625b68b0",
+    "dureader-a6f49dd313cd47dd7b9a",
+    "dureader-a7ee5a1137956caf3e05",
+    "dureader-a9d4c34672f268a2a6b7",
+    "dureader-aa91199da9463b2ec43f",
+    "dureader-aaaf11a424180ccdf77a",
+    "dureader-acecf8010089499053f7",
+    "dureader-af597495ea9ee31c0542",
+    "dureader-b00c3afe715dcbe4c427",
+    "dureader-b0c22babf1699a62ac1c",
+    "dureader-b26c616c2d2725652bb4",
+    "dureader-b28dbfb77513e2336ab4",
+    "dureader-b314f828d92587db74b2",
+    "dureader-b74b121ccc15db6188e4",
+    "dureader-b81675f5a897c85c6e8f",
+    "dureader-bb06869ae2eef33796d2",
+    "dureader-bbb94aafe1db30e3ab0c",
+    "dureader-bd5ac3251da595160ea8",
+    "dureader-bde3cb8174cb0c274923",
+    "dureader-c0bc5af4e51807b4d2ae",
+    "dureader-c0bd7a5cb06bcc451565",
+    "dureader-c2266ab23b88a6c79925",
+    "dureader-c30a7fa36c159e3dbacf",
+    "dureader-c30e409ca541eadacf0b",
+    "dureader-c65e45d340dc93d9ca43",
+    "dureader-c86749ea81b508f955eb",
+    "dureader-ca1fddfb0036f35144e5",
+    "dureader-cdba1d5c8178e3861f80",
+    "dureader-ce3ca7b1841e74c9ea08",
+    "dureader-d05d07f572dda5024241",
+    "dureader-d0b4169c3135b8220c53",
+    "dureader-d636fd688aa3398f3e50",
+    "dureader-d80b5bcc690d2f95b777",
+    "dureader-d98d704d80566ecd7721",
+    "dureader-da02ffa99c4bd9d92a25",
+    "dureader-def4b3a19c35ba62e21c",
+    "dureader-df663bf85d6cca70960e",
+    "dureader-e041ae928f2198bf741d",
+    "dureader-e0cf7048e69be56945e4",
+    "dureader-e5d157e44ba31f15516e",
+    "dureader-e8ec4595f07bf6cb6381",
+    "dureader-e9791699098e26949326",
+    "dureader-ea677ae3d6d0374e6ecf",
+    "dureader-eafd8974dabf81055f4c",
+    "dureader-ec652960d9bf0fbdb104",
+    "dureader-ee6b953919031e411e2b",
+    "dureader-f25dfa71171c69f4ccc5",
+    "dureader-f65dc89c3b7b573781ab",
+    "dureader-f9efa3dbbc966320bb82",
+    "dureader-fb3e09d658bb8500c91c",
+    "xcopa-original-val-10",
+    "xcopa-original-val-11",
+    "xcopa-original-val-12",
+    "xcopa-original-val-13",
+    "xcopa-original-val-15",
+    "xcopa-original-val-18",
+    "xcopa-original-val-19",
+    "xcopa-original-val-21",
+    "xcopa-original-val-22",
+    "xcopa-original-val-25",
+    "xcopa-original-val-26",
+    "xcopa-original-val-29",
+    "xcopa-original-val-3",
+    "xcopa-original-val-31",
+    "xcopa-original-val-34",
+    "xcopa-original-val-35",
+    "xcopa-original-val-37",
+    "xcopa-original-val-38",
+    "xcopa-original-val-4",
+    "xcopa-original-val-45",
+    "xcopa-original-val-46",
+    "xcopa-original-val-47",
+    "xcopa-original-val-48",
+    "xcopa-original-val-49",
+    "xcopa-original-val-50",
+    "xcopa-original-val-52",
+    "xcopa-original-val-59",
+    "xcopa-original-val-6",
+    "xcopa-original-val-62",
+    "xcopa-original-val-65",
+    "xcopa-original-val-67",
+    "xcopa-original-val-69",
+    "xcopa-original-val-70",
+    "xcopa-original-val-71",
+    "xcopa-original-val-76",
+    "xcopa-original-val-77",
+    "xcopa-original-val-78",
+    "xcopa-original-val-79",
+    "xcopa-original-val-80",
+    "xcopa-original-val-82",
+    "xcopa-original-val-84",
+    "xcopa-original-val-86",
+    "xcopa-original-val-87",
+    "xcopa-original-val-88",
+    "xcopa-original-val-89",
+    "xcopa-original-val-91",
+    "xcopa-original-val-95",
+    "xcopa-original-val-97",
+    "xcopa-original-val-98"
+  ]
+}

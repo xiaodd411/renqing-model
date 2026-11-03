@@ -1,0 +1,5 @@
+# Additional dependencies used by the optional LoRA backend.
+-r requirements-tested.txt
+peft==0.17.1
+accelerate==1.11.0
+psutil==7.2.2

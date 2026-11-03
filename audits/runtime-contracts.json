@@ -1,0 +1,48 @@
+{
+  "legacy_default_exact_match": true,
+  "profiled_outputs_need_review": true,
+  "calibration_matches_current_decision": true,
+  "temperature_and_evidence_group_overlap": 0,
+  "certified_profiles": [],
+  "request_outputs": {
+    "model": "renqing-v0.3.1-profile-bundle",
+    "answers": {
+      "intent": {
+        "type": "noul",
+        "probabilities": [
+          0.004894924337637434,
+          0.9951050756623625
+        ],
+        "confidence": 0.9951050756623625,
+        "confidence_definition": "max_class_probability",
+        "calibration_status": "mixed_profile_calibration_only_social_labels_unreviewed",
+        "needs_review": true,
+        "noul": 0.004894924337637434,
+        "review_reasons": [
+          "unreviewed_social_labels"
+        ],
+        "task_profile": "social",
+        "reliability_scope": "declared_profile_and_calibration_distribution_only",
+        "selected_model": "renqing-causal-round3"
+      },
+      "response": {
+        "type": "choice",
+        "probabilities": [
+          0.8671291710131405,
+          0.13287082898685942
+        ],
+        "confidence": 0.8671291710131405,
+        "confidence_definition": "max_class_probability",
+        "calibration_status": "synthetic_demo_only",
+        "needs_review": true,
+        "choice": "如果你有别的想法，也可以告诉我。",
+        "index": 0,
+        "selected_model": "renqing-0.1",
+        "task_profile": "social",
+        "review_reasons": [
+          "legacy_profile_reliability_not_certified"
+        ]
+      }
+    }
+  }
+}

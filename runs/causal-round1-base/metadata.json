@@ -1,0 +1,13 @@
+{
+  "backend": "causal_letter",
+  "model_id": "renqing-causal-round1-base",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "base_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "base_model_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+  "base_model_local_hint": "..\\..\\..\\..\\work\\base-qwen25-1.5b",
+  "max_length": 1024,
+  "order_policy": "as_given",
+  "rotations": 1,
+  "status": "candidate_not_promoted",
+  "adapter": false
+}

@@ -1,0 +1,16 @@
+{
+  "state": "朋友只回复了一个好，没有提供其他上下文。",
+  "questions": {
+    "intent": {
+      "type": "noul",
+      "profile": "social",
+      "prompt": "仅凭这条回复，能确定朋友正在生气吗？"
+    },
+    "response": {
+      "type": "choice",
+      "profile": "social",
+      "prompt": "哪种回应更合适？",
+      "options": ["如果你有别的想法，也可以告诉我。", "你这态度就是故意找茬。"]
+    }
+  }
+}

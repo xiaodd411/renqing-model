@@ -51,18 +51,17 @@ def main():
             result = validate_splits({s: read_examples(Path(args.data) / f"{s}.jsonl")
                                       for s in ("train", "validation", "calibration", "test")})
         elif args.command == "predict":
-            from .model import Predictor
+            from .service import load_predictor
             raw = sys.stdin.read() if args.input == "-" else Path(args.input).read_text(encoding="utf-8-sig")
-            result = Predictor(args.model, args.device).predict(json.loads(raw), args.threshold)
+            result = load_predictor(args.model, args.device).predict(json.loads(raw), args.threshold)
         else:
-            from .model import Predictor, collect_logits
+            from .service import load_predictor, predictor_scores
             from .schema import read_examples
             from .train import sliced_metrics
-            predictor = Predictor(args.model, args.device)
+            predictor = load_predictor(args.model, args.device)
             examples = read_examples(args.data)
-            logits = collect_logits(predictor.model, predictor.tokenizer, examples, predictor.meta["max_length"])
-            temperature = predictor.calibration["temperature"] if predictor.calibration else 1.0
-            result = sliced_metrics(examples, logits, temperature, args.threshold)
+            logits = predictor_scores(predictor, examples)
+            result = sliced_metrics(examples, logits, 1.0, args.threshold)
         encoded = json.dumps(result, ensure_ascii=False, indent=2, allow_nan=False)
         if getattr(args, "output", None):
             target = Path(args.output)

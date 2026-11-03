@@ -1,0 +1,190 @@
+{
+  "data_scope": "development diagnostics; not a fresh test benchmark",
+  "policies": {
+    "as_given_rotations_1": {
+      "examples": 36,
+      "choice_flip_count": 3,
+      "max_probability_difference": 0.49660062825900164,
+      "metrics": {
+        "count": 36,
+        "unambiguous_count": 36,
+        "ambiguous_count": 0,
+        "accuracy_against_target_mode": 0.7777777777777778,
+        "nll": 0.6434137300601971,
+        "brier": 0.23923342789501975,
+        "ece_soft": 0.0863529730486644,
+        "coverage": 0.6111111111111112,
+        "accepted_accuracy_against_target_mode": 0.9545454545454546,
+        "ambiguous_accepted_count": 0,
+        "reliability_bins": [
+          {
+            "lower": 0.3,
+            "count": 1,
+            "confidence": 0.375756539359299,
+            "target_support": 0.0
+          },
+          {
+            "lower": 0.4,
+            "count": 4,
+            "confidence": 0.4494715859507005,
+            "target_support": 0.47
+          },
+          {
+            "lower": 0.5,
+            "count": 6,
+            "confidence": 0.5363226307695447,
+            "target_support": 0.34
+          },
+          {
+            "lower": 0.6,
+            "count": 3,
+            "confidence": 0.6561511578369473,
+            "target_support": 0.96
+          },
+          {
+            "lower": 0.8,
+            "count": 9,
+            "confidence": 0.8589573945703544,
+            "target_support": 0.8488888888888888
+          },
+          {
+            "lower": 0.9,
+            "count": 13,
+            "confidence": 0.9531336901504468,
+            "target_support": 0.9169230769230771
+          }
+        ]
+      },
+      "seconds": 1.5522189000039361
+    },
+    "canonical_rotations_1": {
+      "examples": 36,
+      "choice_flip_count": 1,
+      "max_probability_difference": 2.220446049250313e-16,
+      "metrics": {
+        "count": 36,
+        "unambiguous_count": 36,
+        "ambiguous_count": 0,
+        "accuracy_against_target_mode": 0.8333333333333334,
+        "nll": 0.6169120092936615,
+        "brier": 0.2255761317953874,
+        "ece_soft": 0.16269283712688937,
+        "coverage": 0.4444444444444444,
+        "accepted_accuracy_against_target_mode": 1.0,
+        "ambiguous_accepted_count": 0,
+        "reliability_bins": [
+          {
+            "lower": 0.3,
+            "count": 2,
+            "confidence": 0.39178703753959543,
+            "target_support": 0.0
+          },
+          {
+            "lower": 0.4,
+            "count": 2,
+            "confidence": 0.4410369945434556,
+            "target_support": 1.0
+          },
+          {
+            "lower": 0.5,
+            "count": 3,
+            "confidence": 0.539090077082316,
+            "target_support": 0.6266666666666666
+          },
+          {
+            "lower": 0.6,
+            "count": 5,
+            "confidence": 0.6362714979865158,
+            "target_support": 0.376
+          },
+          {
+            "lower": 0.7,
+            "count": 8,
+            "confidence": 0.7580456695259006,
+            "target_support": 0.985
+          },
+          {
+            "lower": 0.8,
+            "count": 6,
+            "confidence": 0.8726329138193586,
+            "target_support": 0.9199999999999999
+          },
+          {
+            "lower": 0.9,
+            "count": 10,
+            "confidence": 0.9331517631013465,
+            "target_support": 0.9040000000000001
+          }
+        ]
+      },
+      "seconds": 1.2928084000013769
+    },
+    "canonical_rotations_3": {
+      "examples": 36,
+      "choice_flip_count": 0,
+      "max_probability_difference": 2.220446049250313e-16,
+      "metrics": {
+        "count": 36,
+        "unambiguous_count": 36,
+        "ambiguous_count": 0,
+        "accuracy_against_target_mode": 0.8611111111111112,
+        "nll": 0.5990753535688221,
+        "brier": 0.22373299284314627,
+        "ece_soft": 0.09640720201404884,
+        "coverage": 0.5555555555555556,
+        "accepted_accuracy_against_target_mode": 1.0,
+        "ambiguous_accepted_count": 0,
+        "reliability_bins": [
+          {
+            "lower": 0.3,
+            "count": 1,
+            "confidence": 0.3413067958627439,
+            "target_support": 0.88
+          },
+          {
+            "lower": 0.4,
+            "count": 3,
+            "confidence": 0.44958733963583003,
+            "target_support": 0.6666666666666666
+          },
+          {
+            "lower": 0.5,
+            "count": 6,
+            "confidence": 0.5426315296192293,
+            "target_support": 0.6466666666666666
+          },
+          {
+            "lower": 0.6,
+            "count": 2,
+            "confidence": 0.6628274611636228,
+            "target_support": 0.5
+          },
+          {
+            "lower": 0.7,
+            "count": 4,
+            "confidence": 0.7688657360285218,
+            "target_support": 0.72
+          },
+          {
+            "lower": 0.8,
+            "count": 9,
+            "confidence": 0.859664373727957,
+            "target_support": 0.9466666666666667
+          },
+          {
+            "lower": 0.9,
+            "count": 11,
+            "confidence": 0.9447617056456046,
+            "target_support": 0.9127272727272728
+          }
+        ]
+      },
+      "seconds": 3.679982000030577
+    }
+  },
+  "remaining_limitations": [
+    "canonical ordering removes input-order variance but does not prove absence of option wording bias",
+    "rotations increase inference cost",
+    "diagnostic labels are not independent human social annotations"
+  ]
+}

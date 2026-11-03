@@ -1,0 +1,58 @@
+{
+  "purpose": "immutable old artifacts and replay evidence",
+  "files": {
+    "runs/renqing-v1/calibration.json": "30c156d3232e82e1e197e508533ae3395c05d23ce268462688876604c2df8262",
+    "runs/renqing-v1/evaluation.json": "2d1e27b1193b942de0fdcaa14ed295dc453d0facb0aefe0e1e21fb7475ea7d3b",
+    "runs/renqing-v1/head.safetensors": "083fbe50120ff0d7deb09ed5a9e7a853fe5793844a5e48d98d51f1e476627fbc",
+    "runs/renqing-v1/history.json": "a58a0dcbec88511b221444ffb3c796f58b9ff2c91cfd9cce4fd364d2c228932d",
+    "runs/renqing-v1/metadata.json": "2ad385d15ae98a1799100dd39695a69da685350d5cf6a67944f68cfe75b7669e",
+    "runs/renqing-v1/test_predictions.json": "4522b76ff889337fe7ed96ef9aa11b4513b0a4fd7d241c242c4ecc5204740797",
+    "runs/renqing-v1/verification.json": "7ae1023cdde6b7ad86008c09feb0ee7c146487e23bcdd0113999fe36447f64db",
+    "runs/renqing-v1/encoder/config.json": "263a5d263fe391b944692dbab5ddd186d89d50c5d4424641b84cae4ba9be468b",
+    "runs/renqing-v1/encoder/model.safetensors": "16b8864432afc130ae8c5fd063011d998a8eb8b1a095b1621609c366dd0dfb13",
+    "runs/renqing-v1/tokenizer/special_tokens_map.json": "5aa43c2f985a25296d5a5ce621c2f77376ca8091a47993c492fd5460b895b140",
+    "runs/renqing-v1/tokenizer/tokenizer.json": "c1f1c49aeb4d98cfcd83e4bad4e9e597571e754100722de7c9310a8086b53254",
+    "runs/renqing-v1/tokenizer/tokenizer_config.json": "75a743f7397bf8e240ac050a98e85084af163f8d2cc175448e793897e2f67225",
+    "runs/renqing-v1/tokenizer/vocab.txt": "45bbac6b341c319adc98a532532882e91a9cefc0329aa57bac9ae761c27b291c",
+    "runs/renqing-v2/calibration.json": "e3d1c6efc483f500cbb72cc3d7ed86f599306eab3781200293b8b62ec5604aee",
+    "runs/renqing-v2/comparison.json": "0fe2732f020a94e848df1ae87357219b612b544bde415573b3efc15064915e7e",
+    "runs/renqing-v2/evaluation.json": "c1b84b079d20d290ffa13e91f970b0a54df6f3f2e397e3d5f4ec059f0430a251",
+    "runs/renqing-v2/head.safetensors": "0006ec7a1b4c7d691c71833147d4cbb8976222544289269b936a78ec280c71a5",
+    "runs/renqing-v2/history.json": "2fa5ab4528adac64fa044b069ca4b09bbc6ba897f35719dd888c7f81940e9e02",
+    "runs/renqing-v2/metadata.json": "cee93679fc38bbdd33a85023ce94edeeda7d72ca505cb7a629db6797723a37b4",
+    "runs/renqing-v2/test_predictions.json": "16c24ad714fce8684c02f8e9d906d15bdd73a3320871ebfa6ec90ea327f7fd95",
+    "runs/renqing-v2/verification.json": "19ab62bea7d918c1df854e6ddf3ac02b560a3e7276458ecedd4fd023fcd48848",
+    "runs/renqing-v2/encoder/config.json": "263a5d263fe391b944692dbab5ddd186d89d50c5d4424641b84cae4ba9be468b",
+    "runs/renqing-v2/encoder/model.safetensors": "8bc5ef5a05d4ae6459372a902ae07b23bd16b7f34b67ea0d469a8f840854098f",
+    "runs/renqing-v2/tokenizer/special_tokens_map.json": "5aa43c2f985a25296d5a5ce621c2f77376ca8091a47993c492fd5460b895b140",
+    "runs/renqing-v2/tokenizer/tokenizer.json": "c1f1c49aeb4d98cfcd83e4bad4e9e597571e754100722de7c9310a8086b53254",
+    "runs/renqing-v2/tokenizer/tokenizer_config.json": "75a743f7397bf8e240ac050a98e85084af163f8d2cc175448e793897e2f67225",
+    "runs/renqing-v2/tokenizer/vocab.txt": "45bbac6b341c319adc98a532532882e91a9cefc0329aa57bac9ae761c27b291c",
+    "data/demo/calibration.jsonl": "e8c8f3c5e4c66bbe4f9d1ecd02917a96724e011e25abe7878fb5774863fd3199",
+    "data/demo/manifest.json": "a93fac6db9e5a371fafa26598ab3c54433aed166ef83c7dd0a71aead98bafe86",
+    "data/demo/test.jsonl": "fc0935c53a355f0e58cb831fd74e7f6521ff6660cc7bd1e28a35da21bdf8a791",
+    "data/demo/train.jsonl": "7f94aded105b4004ed14585ec3ef5729c4f78b63d05625c210f3d250eee2c93f",
+    "data/demo/validation.jsonl": "32c9e36c9b6be5d758e72da5fe3de415d197fd99727976544f0e9a3660956485",
+    "data/expanded-v2/calibration.jsonl": "10a0e5f22a805c04759e1f311e1333d9a6a0d09f3d6c79856ff56f0fb95364a5",
+    "data/expanded-v2/manifest.json": "2e9ec0d670d13a6d5c5d21b815b1bd9c93e45bde4f49485a58c514629107f226",
+    "data/expanded-v2/quality_report.json": "1256257848a88b64b50a31cee9de49ddf5fe55204ed61ad9a4907290e9ec41a7",
+    "data/expanded-v2/review_queue.jsonl": "6b9123662925464c32832b5667d1bff3160a5383f025ece64bee967e9644380c",
+    "data/expanded-v2/test.jsonl": "a017e959f5d593dfb0d046152157f2c0d8cf397513351008b7a4ac7c9bdb63b0",
+    "data/expanded-v2/train.jsonl": "cf9105386c49cb6952c1dde67b70aae2b090754a38737ac4ae78530fc7b039f9",
+    "data/expanded-v2/validation.jsonl": "6381cff1f699b5340f31112019c67802f20ddd592b70b1c35892791a1b324102"
+  },
+  "replays": {
+    "renqing-v1": {
+      "examples": 24,
+      "max_probability_difference": 0.0,
+      "tolerance": 1e-05,
+      "status": "passed"
+    },
+    "renqing-v2": {
+      "examples": 2148,
+      "max_probability_difference": 0.0,
+      "tolerance": 1e-05,
+      "status": "passed"
+    }
+  }
+}

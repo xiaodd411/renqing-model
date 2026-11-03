@@ -3,3 +3,4 @@
 *.zip binary
 /data/expanded-v2/*.jsonl -text whitespace=trailing-space,space-before-tab,cr-at-eol
 /data/challenge_v2.jsonl -text whitespace=trailing-space,space-before-tab,cr-at-eol
+/data/xcopa-zh-eval/*.jsonl -text whitespace=trailing-space,space-before-tab,cr-at-eol

@@ -6,19 +6,27 @@ import numpy as np
 
 
 def softmax(logits, temperature=1.0):
-    if not math.isfinite(temperature) or temperature <= 0:
+    if isinstance(temperature, (bool, np.bool_)) or not isinstance(temperature, (int, float, np.integer, np.floating)) or not math.isfinite(temperature) or temperature <= 0:
         raise ValueError("temperature 必须为正数")
-    x = np.asarray(logits, dtype=np.float64) / temperature
+    values = np.asarray(logits, dtype=np.float64)
+    if values.ndim != 1 or len(values) < 2 or not np.isfinite(values).all():
+        raise ValueError("logits 必须是至少包含两个有限数值的一维向量")
+    x = values / temperature
     x -= x.max()
     p = np.exp(x)
     return p / p.sum()
 
 
 def evaluate(logits, targets, temperature=1.0, threshold=0.8):
+    if not isinstance(threshold, (int, float, np.integer, np.floating)) or isinstance(threshold, (bool, np.bool_)) or not math.isfinite(threshold) or not 0 <= threshold <= 1:
+        raise ValueError("threshold 必须在 [0,1] 内")
     probabilities = [softmax(x, temperature) for x in logits]
     if not probabilities or len(probabilities) != len(targets):
         raise ValueError("预测和目标必须非空且数量一致")
     targets = [np.asarray(t) for t in targets]
+    for p, target in zip(probabilities, targets):
+        if target.ndim != 1 or len(target) != len(p) or target.dtype.kind not in "iuf" or not np.isfinite(target).all() or (target < 0).any() or not np.isclose(target.sum(), 1, atol=1e-5, rtol=0):
+            raise ValueError("target 必须与 logits 对齐且为总和为 1 的非负有限概率")
     predictions = [int(p.argmax()) for p in probabilities]
     correct = np.array([i == int(t.argmax()) for i, t in zip(predictions, targets)])
     unambiguous = np.array([np.count_nonzero(np.isclose(t, t.max(), atol=1e-10, rtol=0)) == 1 for t in targets])
@@ -53,11 +61,20 @@ def fit_temperature(logits, targets):
     return float(best)
 
 
-def decision_result(question, logits, temperature, threshold, calibrated, calibration_scope="heldout_dataset_only"):
+def decision_result(question, logits, temperature, threshold, calibrated, calibration_scope="heldout_dataset_only", tie_breaker="input"):
+    if not isinstance(threshold, (int, float, np.integer, np.floating)) or isinstance(threshold, (bool, np.bool_)) or not math.isfinite(threshold) or not 0 <= threshold <= 1:
+        raise ValueError("threshold 必须在 [0,1] 内")
     p = softmax(logits, temperature)
+    if len(p) != len(question.options):
+        raise ValueError("logits 数量必须与候选项一致")
     selected = int(p.argmax())
+    if tie_breaker not in ("input", "lexical"):
+        raise ValueError("tie_breaker 必须为 input 或 lexical")
+    if tie_breaker == "lexical":
+        tied = np.flatnonzero(np.isclose(p, p.max(), atol=1e-12, rtol=0))
+        selected = min(map(int, tied), key=lambda i: question.options[i])
     # This is maximum class probability, NOT a separate epistemic-confidence head.
-    confidence = float(p[selected])
+    confidence = float(p.max())
     result = {"type": question.kind, "probabilities": [float(x) for x in p],
               "confidence": confidence, "confidence_definition": "max_class_probability",
               "calibration_status": calibration_scope if calibrated else "uncalibrated",

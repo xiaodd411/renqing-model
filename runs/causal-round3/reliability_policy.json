@@ -1,0 +1,985 @@
+{
+  "decision_fingerprint": "c24185d746b9ef7c3a2d3e930aa213a09ff498ee2272d770b91998cfc7e68bbc",
+  "profiles": {
+    "causal:choice": {
+      "certified": false,
+      "threshold": null,
+      "trusted_label_scope": true,
+      "target_group_success": 0.9,
+      "min_groups": 30,
+      "selected": null,
+      "checks": [
+        {
+          "threshold": 0.5,
+          "groups": 49,
+          "all_accepted_correct_groups": 42,
+          "group_success_lower_bound": 0.646036755627757
+        },
+        {
+          "threshold": 0.5204166666666666,
+          "groups": 47,
+          "all_accepted_correct_groups": 40,
+          "group_success_lower_bound": 0.6339200374138607
+        },
+        {
+          "threshold": 0.5408333333333333,
+          "groups": 46,
+          "all_accepted_correct_groups": 39,
+          "group_success_lower_bound": 0.6275482613030767
+        },
+        {
+          "threshold": 0.56125,
+          "groups": 44,
+          "all_accepted_correct_groups": 37,
+          "group_success_lower_bound": 0.6141227050483123
+        },
+        {
+          "threshold": 0.5816666666666667,
+          "groups": 41,
+          "all_accepted_correct_groups": 36,
+          "group_success_lower_bound": 0.6474776560142383
+        },
+        {
+          "threshold": 0.6020833333333333,
+          "groups": 39,
+          "all_accepted_correct_groups": 36,
+          "group_success_lower_bound": 0.6953189563695062
+        },
+        {
+          "threshold": 0.6225,
+          "groups": 38,
+          "all_accepted_correct_groups": 35,
+          "group_success_lower_bound": 0.6889982278865602
+        },
+        {
+          "threshold": 0.6429166666666667,
+          "groups": 38,
+          "all_accepted_correct_groups": 35,
+          "group_success_lower_bound": 0.6889982278865602
+        },
+        {
+          "threshold": 0.6633333333333333,
+          "groups": 35,
+          "all_accepted_correct_groups": 33,
+          "group_success_lower_bound": 0.7045371359970204
+        },
+        {
+          "threshold": 0.68375,
+          "groups": 33,
+          "all_accepted_correct_groups": 32,
+          "group_success_lower_bound": 0.7312121998104089
+        },
+        {
+          "threshold": 0.7041666666666666,
+          "groups": 32,
+          "all_accepted_correct_groups": 32,
+          "group_success_lower_bound": 0.770165044114197
+        },
+        {
+          "threshold": 0.7245833333333334,
+          "groups": 31,
+          "all_accepted_correct_groups": 31,
+          "group_success_lower_bound": 0.764497039490131
+        },
+        {
+          "threshold": 0.745,
+          "groups": 31,
+          "all_accepted_correct_groups": 31,
+          "group_success_lower_bound": 0.764497039490131
+        },
+        {
+          "threshold": 0.7654166666666666,
+          "groups": 28,
+          "all_accepted_correct_groups": 28,
+          "group_success_lower_bound": 0.745681656869697
+        },
+        {
+          "threshold": 0.7858333333333334,
+          "groups": 28,
+          "all_accepted_correct_groups": 28,
+          "group_success_lower_bound": 0.745681656869697
+        },
+        {
+          "threshold": 0.80625,
+          "groups": 27,
+          "all_accepted_correct_groups": 27,
+          "group_success_lower_bound": 0.7387234742767518
+        },
+        {
+          "threshold": 0.8266666666666667,
+          "groups": 25,
+          "all_accepted_correct_groups": 25,
+          "group_success_lower_bound": 0.7235987253975796
+        },
+        {
+          "threshold": 0.8470833333333333,
+          "groups": 22,
+          "all_accepted_correct_groups": 22,
+          "group_success_lower_bound": 0.6973161255034906
+        },
+        {
+          "threshold": 0.8674999999999999,
+          "groups": 20,
+          "all_accepted_correct_groups": 20,
+          "group_success_lower_bound": 0.676829585375945
+        },
+        {
+          "threshold": 0.8879166666666667,
+          "groups": 19,
+          "all_accepted_correct_groups": 19,
+          "group_success_lower_bound": 0.6655099471880918
+        },
+        {
+          "threshold": 0.9083333333333333,
+          "groups": 18,
+          "all_accepted_correct_groups": 18,
+          "group_success_lower_bound": 0.653368542832662
+        },
+        {
+          "threshold": 0.92875,
+          "groups": 16,
+          "all_accepted_correct_groups": 16,
+          "group_success_lower_bound": 0.6262344718925935
+        },
+        {
+          "threshold": 0.9491666666666667,
+          "groups": 14,
+          "all_accepted_correct_groups": 14,
+          "group_success_lower_bound": 0.5944915506925924
+        },
+        {
+          "threshold": 0.9695833333333334,
+          "groups": 8,
+          "all_accepted_correct_groups": 8,
+          "group_success_lower_bound": 0.45585251564387197
+        },
+        {
+          "threshold": 0.99,
+          "groups": 1,
+          "all_accepted_correct_groups": 1,
+          "group_success_lower_bound": 0.0947909015013205
+        }
+      ],
+      "reason": "insufficient_calibration_evidence",
+      "method": "group-all-accepted-correct Wilson lower bound; Bonferroni adjustment over threshold grid",
+      "limitations": "depends on group independence and matching calibration distribution; no real-world or OOD guarantee"
+    },
+    "social:choice": {
+      "certified": false,
+      "threshold": null,
+      "trusted_label_scope": false,
+      "target_group_success": 0.9,
+      "min_groups": 30,
+      "selected": null,
+      "checks": [
+        {
+          "threshold": 0.5,
+          "groups": 2,
+          "all_accepted_correct_groups": 1,
+          "group_success_lower_bound": 0.045348247071958496
+        },
+        {
+          "threshold": 0.5204166666666666,
+          "groups": 2,
+          "all_accepted_correct_groups": 1,
+          "group_success_lower_bound": 0.045348247071958496
+        },
+        {
+          "threshold": 0.5408333333333333,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.56125,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.5816666666666667,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.6020833333333333,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.6225,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.6429166666666667,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.6633333333333333,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.68375,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.7041666666666666,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.7245833333333334,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.745,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.7654166666666666,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.7858333333333334,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.80625,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.8266666666666667,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.8470833333333333,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.8674999999999999,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.8879166666666667,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.9083333333333333,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.92875,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.9491666666666667,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.9695833333333334,
+          "groups": 0,
+          "all_accepted_correct_groups": 0,
+          "group_success_lower_bound": 0.0
+        },
+        {
+          "threshold": 0.99,
+          "groups": 0,
+          "all_accepted_correct_groups": 0,
+          "group_success_lower_bound": 0.0
+        }
+      ],
+      "reason": "unreviewed_social_labels",
+      "method": "group-all-accepted-correct Wilson lower bound; Bonferroni adjustment over threshold grid",
+      "limitations": "depends on group independence and matching calibration distribution; no real-world or OOD guarantee"
+    },
+    "social:noul": {
+      "certified": false,
+      "threshold": null,
+      "trusted_label_scope": false,
+      "target_group_success": 0.9,
+      "min_groups": 30,
+      "selected": null,
+      "checks": [
+        {
+          "threshold": 0.5,
+          "groups": 2,
+          "all_accepted_correct_groups": 0,
+          "group_success_lower_bound": 0.0
+        },
+        {
+          "threshold": 0.5204166666666666,
+          "groups": 2,
+          "all_accepted_correct_groups": 0,
+          "group_success_lower_bound": 0.0
+        },
+        {
+          "threshold": 0.5408333333333333,
+          "groups": 2,
+          "all_accepted_correct_groups": 0,
+          "group_success_lower_bound": 0.0
+        },
+        {
+          "threshold": 0.56125,
+          "groups": 2,
+          "all_accepted_correct_groups": 0,
+          "group_success_lower_bound": 0.0
+        },
+        {
+          "threshold": 0.5816666666666667,
+          "groups": 2,
+          "all_accepted_correct_groups": 0,
+          "group_success_lower_bound": 0.0
+        },
+        {
+          "threshold": 0.6020833333333333,
+          "groups": 2,
+          "all_accepted_correct_groups": 0,
+          "group_success_lower_bound": 0.0
+        },
+        {
+          "threshold": 0.6225,
+          "groups": 2,
+          "all_accepted_correct_groups": 0,
+          "group_success_lower_bound": 0.0
+        },
+        {
+          "threshold": 0.6429166666666667,
+          "groups": 2,
+          "all_accepted_correct_groups": 0,
+          "group_success_lower_bound": 0.0
+        },
+        {
+          "threshold": 0.6633333333333333,
+          "groups": 2,
+          "all_accepted_correct_groups": 0,
+          "group_success_lower_bound": 0.0
+        },
+        {
+          "threshold": 0.68375,
+          "groups": 2,
+          "all_accepted_correct_groups": 0,
+          "group_success_lower_bound": 0.0
+        },
+        {
+          "threshold": 0.7041666666666666,
+          "groups": 2,
+          "all_accepted_correct_groups": 0,
+          "group_success_lower_bound": 0.0
+        },
+        {
+          "threshold": 0.7245833333333334,
+          "groups": 2,
+          "all_accepted_correct_groups": 0,
+          "group_success_lower_bound": 0.0
+        },
+        {
+          "threshold": 0.745,
+          "groups": 2,
+          "all_accepted_correct_groups": 0,
+          "group_success_lower_bound": 0.0
+        },
+        {
+          "threshold": 0.7654166666666666,
+          "groups": 2,
+          "all_accepted_correct_groups": 0,
+          "group_success_lower_bound": 0.0
+        },
+        {
+          "threshold": 0.7858333333333334,
+          "groups": 2,
+          "all_accepted_correct_groups": 0,
+          "group_success_lower_bound": 0.0
+        },
+        {
+          "threshold": 0.80625,
+          "groups": 2,
+          "all_accepted_correct_groups": 0,
+          "group_success_lower_bound": 0.0
+        },
+        {
+          "threshold": 0.8266666666666667,
+          "groups": 2,
+          "all_accepted_correct_groups": 0,
+          "group_success_lower_bound": 0.0
+        },
+        {
+          "threshold": 0.8470833333333333,
+          "groups": 2,
+          "all_accepted_correct_groups": 0,
+          "group_success_lower_bound": 0.0
+        },
+        {
+          "threshold": 0.8674999999999999,
+          "groups": 2,
+          "all_accepted_correct_groups": 0,
+          "group_success_lower_bound": 0.0
+        },
+        {
+          "threshold": 0.8879166666666667,
+          "groups": 2,
+          "all_accepted_correct_groups": 1,
+          "group_success_lower_bound": 0.045348247071958496
+        },
+        {
+          "threshold": 0.9083333333333333,
+          "groups": 2,
+          "all_accepted_correct_groups": 1,
+          "group_success_lower_bound": 0.045348247071958496
+        },
+        {
+          "threshold": 0.92875,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.9491666666666667,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.9695833333333334,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.99,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        }
+      ],
+      "reason": "unreviewed_social_labels",
+      "method": "group-all-accepted-correct Wilson lower bound; Bonferroni adjustment over threshold grid",
+      "limitations": "depends on group independence and matching calibration distribution; no real-world or OOD guarantee"
+    },
+    "social:score": {
+      "certified": false,
+      "threshold": null,
+      "trusted_label_scope": false,
+      "target_group_success": 0.9,
+      "min_groups": 30,
+      "selected": null,
+      "checks": [
+        {
+          "threshold": 0.5,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.5204166666666666,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.5408333333333333,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.56125,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.5816666666666667,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.6020833333333333,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.6225,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.6429166666666667,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.6633333333333333,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.68375,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.7041666666666666,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.7245833333333334,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.745,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.7654166666666666,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.7858333333333334,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.80625,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.8266666666666667,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.8470833333333333,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.8674999999999999,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.8879166666666667,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.9083333333333333,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.92875,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.9491666666666667,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        },
+        {
+          "threshold": 0.9695833333333334,
+          "groups": 0,
+          "all_accepted_correct_groups": 0,
+          "group_success_lower_bound": 0.0
+        },
+        {
+          "threshold": 0.99,
+          "groups": 0,
+          "all_accepted_correct_groups": 0,
+          "group_success_lower_bound": 0.0
+        }
+      ],
+      "reason": "unreviewed_social_labels",
+      "method": "group-all-accepted-correct Wilson lower bound; Bonferroni adjustment over threshold grid",
+      "limitations": "depends on group independence and matching calibration distribution; no real-world or OOD guarantee"
+    },
+    "stance:choice": {
+      "certified": false,
+      "threshold": null,
+      "trusted_label_scope": true,
+      "target_group_success": 0.9,
+      "min_groups": 30,
+      "selected": null,
+      "checks": [
+        {
+          "threshold": 0.5,
+          "groups": 100,
+          "all_accepted_correct_groups": 75,
+          "group_success_lower_bound": 0.5985173508480038
+        },
+        {
+          "threshold": 0.5204166666666666,
+          "groups": 91,
+          "all_accepted_correct_groups": 69,
+          "group_success_lower_bound": 0.599509741990339
+        },
+        {
+          "threshold": 0.5408333333333333,
+          "groups": 88,
+          "all_accepted_correct_groups": 69,
+          "group_success_lower_bound": 0.6245751275660305
+        },
+        {
+          "threshold": 0.56125,
+          "groups": 86,
+          "all_accepted_correct_groups": 67,
+          "group_success_lower_bound": 0.6170884832218061
+        },
+        {
+          "threshold": 0.5816666666666667,
+          "groups": 81,
+          "all_accepted_correct_groups": 64,
+          "group_success_lower_bound": 0.6237885819827762
+        },
+        {
+          "threshold": 0.6020833333333333,
+          "groups": 78,
+          "all_accepted_correct_groups": 63,
+          "group_success_lower_bound": 0.6397108794110716
+        },
+        {
+          "threshold": 0.6225,
+          "groups": 76,
+          "all_accepted_correct_groups": 63,
+          "group_success_lower_bound": 0.6611706802120051
+        },
+        {
+          "threshold": 0.6429166666666667,
+          "groups": 75,
+          "all_accepted_correct_groups": 64,
+          "group_success_lower_bound": 0.6880126458386746
+        },
+        {
+          "threshold": 0.6633333333333333,
+          "groups": 73,
+          "all_accepted_correct_groups": 62,
+          "group_success_lower_bound": 0.6806951910604674
+        },
+        {
+          "threshold": 0.68375,
+          "groups": 71,
+          "all_accepted_correct_groups": 60,
+          "group_success_lower_bound": 0.6730288003107017
+        },
+        {
+          "threshold": 0.7041666666666666,
+          "groups": 70,
+          "all_accepted_correct_groups": 59,
+          "group_success_lower_bound": 0.6690569360837689
+        },
+        {
+          "threshold": 0.7245833333333334,
+          "groups": 67,
+          "all_accepted_correct_groups": 57,
+          "group_success_lower_bound": 0.6737432402780754
+        },
+        {
+          "threshold": 0.745,
+          "groups": 65,
+          "all_accepted_correct_groups": 56,
+          "group_success_lower_bound": 0.6832213036146991
+        },
+        {
+          "threshold": 0.7654166666666666,
+          "groups": 64,
+          "all_accepted_correct_groups": 56,
+          "group_success_lower_bound": 0.6975795926668538
+        },
+        {
+          "threshold": 0.7858333333333334,
+          "groups": 64,
+          "all_accepted_correct_groups": 56,
+          "group_success_lower_bound": 0.6975795926668538
+        },
+        {
+          "threshold": 0.80625,
+          "groups": 58,
+          "all_accepted_correct_groups": 51,
+          "group_success_lower_bound": 0.6919772868783491
+        },
+        {
+          "threshold": 0.8266666666666667,
+          "groups": 57,
+          "all_accepted_correct_groups": 50,
+          "group_success_lower_bound": 0.687466602895468
+        },
+        {
+          "threshold": 0.8470833333333333,
+          "groups": 50,
+          "all_accepted_correct_groups": 46,
+          "group_success_lower_bound": 0.7248232669317204
+        },
+        {
+          "threshold": 0.8674999999999999,
+          "groups": 43,
+          "all_accepted_correct_groups": 39,
+          "group_success_lower_bound": 0.6887907914461678
+        },
+        {
+          "threshold": 0.8879166666666667,
+          "groups": 39,
+          "all_accepted_correct_groups": 36,
+          "group_success_lower_bound": 0.6953189563695062
+        },
+        {
+          "threshold": 0.9083333333333333,
+          "groups": 36,
+          "all_accepted_correct_groups": 33,
+          "group_success_lower_bound": 0.6755394823833538
+        },
+        {
+          "threshold": 0.92875,
+          "groups": 32,
+          "all_accepted_correct_groups": 29,
+          "group_success_lower_bound": 0.644816958419416
+        },
+        {
+          "threshold": 0.9491666666666667,
+          "groups": 24,
+          "all_accepted_correct_groups": 23,
+          "group_success_lower_bound": 0.6593930489787696
+        },
+        {
+          "threshold": 0.9695833333333334,
+          "groups": 14,
+          "all_accepted_correct_groups": 13,
+          "group_success_lower_bound": 0.5158287469096557
+        },
+        {
+          "threshold": 0.99,
+          "groups": 2,
+          "all_accepted_correct_groups": 2,
+          "group_success_lower_bound": 0.1731671342378363
+        }
+      ],
+      "reason": "insufficient_calibration_evidence",
+      "method": "group-all-accepted-correct Wilson lower bound; Bonferroni adjustment over threshold grid",
+      "limitations": "depends on group independence and matching calibration distribution; no real-world or OOD guarantee"
+    },
+    "stance:noul": {
+      "certified": false,
+      "threshold": null,
+      "trusted_label_scope": true,
+      "target_group_success": 0.9,
+      "min_groups": 30,
+      "selected": null,
+      "checks": [
+        {
+          "threshold": 0.5,
+          "groups": 122,
+          "all_accepted_correct_groups": 35,
+          "group_success_lower_bound": 0.179512402693281
+        },
+        {
+          "threshold": 0.5204166666666666,
+          "groups": 122,
+          "all_accepted_correct_groups": 36,
+          "group_success_lower_bound": 0.18617873543609945
+        },
+        {
+          "threshold": 0.5408333333333333,
+          "groups": 122,
+          "all_accepted_correct_groups": 50,
+          "group_success_lower_bound": 0.28371303905781936
+        },
+        {
+          "threshold": 0.56125,
+          "groups": 121,
+          "all_accepted_correct_groups": 58,
+          "group_success_lower_bound": 0.34572710237187326
+        },
+        {
+          "threshold": 0.5816666666666667,
+          "groups": 121,
+          "all_accepted_correct_groups": 64,
+          "group_success_lower_bound": 0.3917895181072974
+        },
+        {
+          "threshold": 0.6020833333333333,
+          "groups": 121,
+          "all_accepted_correct_groups": 70,
+          "group_success_lower_bound": 0.43909333173712817
+        },
+        {
+          "threshold": 0.6225,
+          "groups": 121,
+          "all_accepted_correct_groups": 70,
+          "group_success_lower_bound": 0.43909333173712817
+        },
+        {
+          "threshold": 0.6429166666666667,
+          "groups": 121,
+          "all_accepted_correct_groups": 74,
+          "group_success_lower_bound": 0.4713361499032991
+        },
+        {
+          "threshold": 0.6633333333333333,
+          "groups": 120,
+          "all_accepted_correct_groups": 80,
+          "group_success_lower_bound": 0.5258054858868493
+        },
+        {
+          "threshold": 0.68375,
+          "groups": 119,
+          "all_accepted_correct_groups": 81,
+          "group_success_lower_bound": 0.5394737964838479
+        },
+        {
+          "threshold": 0.7041666666666666,
+          "groups": 117,
+          "all_accepted_correct_groups": 83,
+          "group_success_lower_bound": 0.567878099955374
+        },
+        {
+          "threshold": 0.7245833333333334,
+          "groups": 115,
+          "all_accepted_correct_groups": 83,
+          "group_success_lower_bound": 0.5794887205249045
+        },
+        {
+          "threshold": 0.745,
+          "groups": 112,
+          "all_accepted_correct_groups": 83,
+          "group_success_lower_bound": 0.5978975242601725
+        },
+        {
+          "threshold": 0.7654166666666666,
+          "groups": 111,
+          "all_accepted_correct_groups": 84,
+          "group_success_lower_bound": 0.6139608870065434
+        },
+        {
+          "threshold": 0.7858333333333334,
+          "groups": 108,
+          "all_accepted_correct_groups": 84,
+          "group_success_lower_bound": 0.6345863581052076
+        },
+        {
+          "threshold": 0.80625,
+          "groups": 101,
+          "all_accepted_correct_groups": 82,
+          "group_success_lower_bound": 0.6669612549514959
+        },
+        {
+          "threshold": 0.8266666666666667,
+          "groups": 97,
+          "all_accepted_correct_groups": 83,
+          "group_success_lower_bound": 0.7138623395658936
+        },
+        {
+          "threshold": 0.8470833333333333,
+          "groups": 81,
+          "all_accepted_correct_groups": 70,
+          "group_success_lower_bound": 0.7080927799796813
+        },
+        {
+          "threshold": 0.8674999999999999,
+          "groups": 64,
+          "all_accepted_correct_groups": 56,
+          "group_success_lower_bound": 0.6975795926668538
+        },
+        {
+          "threshold": 0.8879166666666667,
+          "groups": 50,
+          "all_accepted_correct_groups": 44,
+          "group_success_lower_bound": 0.6753688559833437
+        },
+        {
+          "threshold": 0.9083333333333333,
+          "groups": 37,
+          "all_accepted_correct_groups": 34,
+          "group_success_lower_bound": 0.6824107857985188
+        },
+        {
+          "threshold": 0.92875,
+          "groups": 15,
+          "all_accepted_correct_groups": 14,
+          "group_success_lower_bound": 0.5353864357463173
+        },
+        {
+          "threshold": 0.9491666666666667,
+          "groups": 6,
+          "all_accepted_correct_groups": 6,
+          "group_success_lower_bound": 0.3858636111979021
+        },
+        {
+          "threshold": 0.9695833333333334,
+          "groups": 3,
+          "all_accepted_correct_groups": 3,
+          "group_success_lower_bound": 0.239052668581658
+        },
+        {
+          "threshold": 0.99,
+          "groups": 0,
+          "all_accepted_correct_groups": 0,
+          "group_success_lower_bound": 0.0
+        }
+      ],
+      "reason": "insufficient_calibration_evidence",
+      "method": "group-all-accepted-correct Wilson lower bound; Bonferroni adjustment over threshold grid",
+      "limitations": "depends on group independence and matching calibration distribution; no real-world or OOD guarantee"
+    }
+  },
+  "temperature_and_threshold_groups_disjoint": true,
+  "automatic_acceptance_note": "only declared profiles with sufficient in-distribution calibration evidence; never an OOD guarantee"
+}

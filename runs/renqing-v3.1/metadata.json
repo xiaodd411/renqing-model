@@ -1,0 +1,24 @@
+{
+  "backend": "expert_bundle",
+  "model_id": "renqing-v0.3.1-profile-bundle",
+  "status": "experimental_opt_in",
+  "legacy_default": "social_choice_v1",
+  "experts": {
+    "social_choice_v1": "../renqing-v1",
+    "stance_v2": "../renqing-v2",
+    "causal_round3": "../causal-round3"
+  },
+  "routes": {
+    "social:choice": "social_choice_v1",
+    "social:noul": "causal_round3",
+    "social:score": "causal_round3",
+    "stance:choice": "stance_v2",
+    "stance:noul": "stance_v2",
+    "stance:score": "stance_v2",
+    "causal:choice": "causal_round3",
+    "causal:noul": "causal_round3",
+    "causal:score": "causal_round3"
+  },
+  "compatibility": "no profile delegates exactly to v0.1; explicit old model paths remain unchanged",
+  "selection_note": "v3.1 repairs v3 known regressions; no fresh test claim"
+}

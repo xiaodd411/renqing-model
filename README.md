@@ -6,6 +6,22 @@
 
 扩展训练实测见 [RESULTS_V2.md](RESULTS_V2.md)：公开立场任务改善，但非模板化人际挑战没有可信提升，部分任务退步。默认权重继续保留 v0.1，新权重仅供显式选择的实验使用。
 
+实现过程见 [HOW_IT_WORKS.md](HOW_IT_WORKS.md)。新增 Qwen LoRA 后端与按任务组合的实验版本；两轮改进、退步修复和剩余缺点见 [RESULTS_V3.md](RESULTS_V3.md)。旧 v1/v2 权重和默认入口保留。
+
+## 可选的 LoRA 实验版
+
+```powershell
+.\setup.ps1 -Causal
+# 明确下载约 3.1GB 的固定公开底座到项目缓存，不上传场景数据
+.venv\Scripts\python.exe scripts\fetch_causal_base.py
+# 需要仓库内的适配器和元数据，以及 Release 中的旧 v1/v2 编码器权重
+.\predict.ps1 -Model runs\renqing-v3.1 -InputFile examples\request-profile.json
+```
+
+新增请求字段 `profile` 可选 `social`（人际）、`stance`（文本立场）、`causal`（因果常识）。未指定时，组合版沿用旧 v1 的完整路径；显式类型的组合策略保留 v1 回应选择、v2 公开立场，并使用新 LoRA 的是非/评分或常识判断。新后端概率不构成人工批准，当前全部要求复核。GPU 实测环境为 RTX 5070 12GB；尚未对新后端完成 CPU 性能评测。
+
+`runs/renqing-v3` 和 `runs/causal-round2` 保存曾产生评分退步的候选，供审计复现；建议选择修复后的 `runs/renqing-v3.1`。它仍是显式启用的实验版，默认不会切换。
+
 参考 [TypeSafe 官方 Jev 介绍](https://typesafe.ai/blog/introducing-system-one-models-and-jev) 和[问题类型文档](https://docs.typesafe.ai/introduction)，采用类似的类型化决策思路。这里的模型结构、训练方法和请求协议由本项目定义；训练使用软标签交叉熵与温度缩放，没有实现或声称复现 TypeSafe 的 RLCD、采样器及性能。
 
 ## 开始使用

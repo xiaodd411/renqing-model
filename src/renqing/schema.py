@@ -20,6 +20,7 @@ class Question:
     prompt: str
     options: tuple[str, ...]
     values: tuple[float, ...] = ()
+    profile: str | None = None
 
     @classmethod
     def parse(cls, data: dict) -> "Question":
@@ -27,8 +28,11 @@ class Question:
             raise ValueError("question 必须是对象")
         kind = data.get("type")
         prompt = text(data.get("prompt"), "prompt", 800)
+        profile = data.get("profile")
+        if profile is not None and profile not in ("social", "stance", "causal"):
+            raise ValueError("profile 必须为 social、stance 或 causal")
         if kind == "noul":
-            return cls(kind, prompt, ("是", "否"))
+            return cls(kind, prompt, ("是", "否"), profile=profile)
         if kind not in ("choice", "score"):
             raise ValueError("type 必须是 choice、score 或 noul")
         options = data.get("options")
@@ -47,7 +51,7 @@ class Question:
             values = tuple(float(x) for x in raw)
             if any(a >= b for a, b in zip(values, values[1:])):
                 raise ValueError("score.values 必须严格递增")
-        return cls(kind, prompt, options, values)
+        return cls(kind, prompt, options, values, profile)
 
     def as_dict(self) -> dict:
         out = {"type": self.kind, "prompt": self.prompt}
@@ -55,6 +59,8 @@ class Question:
             out["options"] = list(self.options)
         if self.values:
             out["values"] = list(self.values)
+        if self.profile is not None:
+            out["profile"] = self.profile
         return out
 
     def queries(self) -> list[str]:
